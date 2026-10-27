@@ -1,0 +1,234 @@
+{
+    "schemaVersion": "1.0",
+    "run": {
+        "runId": "fed9-capture-1333835614",
+        "capturedAtUnixMs": 1787598139143,
+        "capturedMonotonicMs": 1333835614,
+        "operatorTag": "fed9-diagnostic"
+    },
+    "redaction": {
+        "redactedDeviceId": "redacted-looi-device"
+    },
+    "gattInventory": {
+        "services": [
+            {
+                "uuid": "00001801-0000-1000-8000-00805f9b34fb",
+                "isPrimary": true,
+                "characteristics": [
+                    {
+                        "uuid": "00002a05-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    }
+                ]
+            },
+            {
+                "uuid": "00001800-0000-1000-8000-00805f9b34fb",
+                "isPrimary": true,
+                "characteristics": [
+                    {
+                        "uuid": "00002a00-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "00002a01-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "00002aa6-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    }
+                ]
+            },
+            {
+                "uuid": "00008018-0000-1000-8000-00805f9b34fb",
+                "isPrimary": true,
+                "characteristics": [
+                    {
+                        "uuid": "00008020-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "00008021-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "00008022-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "00008023-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    }
+                ]
+            },
+            {
+                "uuid": "0000180a-0000-1000-8000-00805f9b34fb",
+                "isPrimary": true,
+                "characteristics": [
+                    {
+                        "uuid": "00002a24-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "00002a25-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "00002a26-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "00002a27-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "00002a28-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "00002a29-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "00002a2a-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "00002a2b-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    }
+                ]
+            },
+            {
+                "uuid": "6e400001-b5a3-f393-e0a9-e50e24dcff00",
+                "isPrimary": true,
+                "characteristics": [
+                    {
+                        "uuid": "0000ff01-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000ff02-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    }
+                ]
+            },
+            {
+                "uuid": "000000ff-0000-1000-8000-00805f9b34fb",
+                "isPrimary": true,
+                "characteristics": [
+                    {
+                        "uuid": "0000fed0-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000fed1-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000fed2-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000fed3-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000fe00-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000fed5-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000fed6-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000fed7-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000fed8-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000feda-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000fedf-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000fed4-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000fef0-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    }
+                ]
+            }
+        ]
+    },
+    "events": [
+        {
+            "type": "notification",
+            "timestampMs": 27013,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0101010100",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 55138,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0101010101",
+            "isIndication": false
+        }
+    ],
+    "firmwareUnknowns": [],
+    "notes": "Read-only FED9 diagnostic; profileCandidate=PROFILE_A/v1; selectionMode=AMBIGUOUS; profileVerified=false; generation=1; records=2"
+}

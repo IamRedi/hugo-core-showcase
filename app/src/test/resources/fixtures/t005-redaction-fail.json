@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0",
+  "run": {
+    "runId": "t005-redaction",
+    "capturedAtUnixMs": 1756001236000,
+    "capturedMonotonicMs": 1300,
+    "operatorTag": "lab-operator-A"
+  },
+  "redaction": {
+    "redactedDeviceId": "sha256:7f9c2b1a6e5f4d8a1234abcd5678ef90"
+  },
+  "macAddress": "AA:BB:CC:DD:EE:FF",
+  "gattInventory": {
+    "services": []
+  },
+  "events": [],
+  "firmwareUnknowns": []
+}

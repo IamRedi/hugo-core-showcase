@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0",
+  "run": {
+    "runId": "t011-hardware-2026-08-24-001",
+    "capturedAtUnixMs": 1787564082966,
+    "capturedMonotonicMs": 0,
+    "operatorTag": "physical-verification"
+  },
+  "redaction": {
+    "redactedDeviceId": "sha256:0a2cfb1f6d74e12b8a017f04c59e6d31",
+    "redactedHardwareHint": "real LOOI base; stable identifiers not retained"
+  },
+  "gattInventory": {
+    "services": [
+      {
+        "uuid": "00001801-0000-1000-8000-00805F9B34FB",
+        "isPrimary": true,
+        "characteristics": [
+          { "uuid": "00002A05-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] }
+        ]
+      },
+      {
+        "uuid": "00001800-0000-1000-8000-00805F9B34FB",
+        "isPrimary": true,
+        "characteristics": [
+          { "uuid": "00002A00-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "00002A01-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "00002AA6-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] }
+        ]
+      },
+      {
+        "uuid": "00008018-0000-1000-8000-00805F9B34FB",
+        "isPrimary": true,
+        "characteristics": [
+          { "uuid": "00008020-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "00008021-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "00008022-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "00008023-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] }
+        ]
+      },
+      {
+        "uuid": "0000180A-0000-1000-8000-00805F9B34FB",
+        "isPrimary": true,
+        "characteristics": [
+          { "uuid": "00002A24-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "00002A25-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "00002A26-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "00002A27-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "00002A28-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "00002A29-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "00002A2A-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "00002A2B-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] }
+        ]
+      },
+      {
+        "uuid": "6E400001-B5A3-F393-E0A9-E50E24DCFF00",
+        "isPrimary": true,
+        "characteristics": [
+          { "uuid": "0000FF01-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "0000FF02-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] }
+        ]
+      },
+      {
+        "uuid": "000000FF-0000-1000-8000-00805F9B34FB",
+        "isPrimary": true,
+        "characteristics": [
+          { "uuid": "0000FED0-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "0000FED1-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "0000FED2-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "0000FED3-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "0000FE00-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "0000FED5-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "0000FED6-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "0000FED7-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "0000FED8-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "0000FED9-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "0000FEDA-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "0000FEDF-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "0000FED4-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] }
+        ]
+      }
+    ]
+  },
+  "events": [],
+  "firmwareUnknowns": [
+    {
+      "component": "Protocol profile",
+      "summary": "The observed inventory is candidate evidence only; no profile was selected or verified."
+    },
+    {
+      "component": "Peer timeout",
+      "summary": "Without a handshake the peer ended an earlier transport-ready session after about five seconds with GATT status 19."
+    },
+    {
+      "component": "Characteristic metadata",
+      "summary": "The T011 diagnostic model did not retain properties or descriptors; empty arrays mean not captured, not absent."
+    }
+  ],
+  "notes": "Read-only physical verification on Samsung SM-S928B, Android 16/API 36. Connection and service discovery succeeded twice after one clean disconnect. No GATT characteristic operation or protocol packet was issued. capturedMonotonicMs was not retained by the diagnostic flow."
+}

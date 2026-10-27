@@ -1,0 +1,164 @@
+{
+  "schemaVersion": "1.0",
+  "checkpointId": "T001-T032",
+  "lockedByTask": "H002",
+  "taskRange": {
+    "first": "T001",
+    "last": "T032",
+    "count": 32,
+    "ledgerPath": "docs/SPARK_TASKS.md"
+  },
+  "repositoryCheckpoint": {
+    "commit": "0bcf536cdaae3b5c9c22247bb093ac6fc68cff26",
+    "tree": "dfeb86b1627cdc7ee2a05057e9987138d154daaf",
+    "parent": "8e1eef9ff759a3f8ab50c72cd4c080caadfa4a73",
+    "committedAt": "2026-08-25T09:52:17+02:00",
+    "subject": "feat: complete T032 manual-control acceptance"
+  },
+  "architectureBaseline": {
+    "task": "H001",
+    "commit": "ee35539cd1985f64f9bbf62dd9b386316a3e4a1e",
+    "tree": "78f28bfb13dd6289e55932169d199f683881ea5b",
+    "acceptanceRecordPath": "docs/H001_ARCHITECTURE_ACCEPTANCE.md"
+  },
+  "coverage": {
+    "repositoryFileCount": 139,
+    "evidenceRoots": [
+      {
+        "path": "docs",
+        "fileCount": 16
+      },
+      {
+        "path": "app/src/test/resources/fixtures",
+        "fileCount": 14
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "path": "app/src/test/resources/fixtures/t005-malformed.json",
+      "blob": "7dda86704ed09eb9f1ea385e5b30ae5fb45e97fb"
+    },
+    {
+      "path": "app/src/test/resources/fixtures/t005-redaction-fail.json",
+      "blob": "9ffa03250a29183a27adc22e4adf87550730c4aa"
+    },
+    {
+      "path": "app/src/test/resources/fixtures/t005-valid.json",
+      "blob": "045b747a1ebcd2b85091b81b1f171a44e84838b5"
+    },
+    {
+      "path": "app/src/test/resources/fixtures/t011-hardware-2026-08-24.json",
+      "blob": "bb2335489ba96e9184aa45079a8a26b454e3e6c5"
+    },
+    {
+      "path": "app/src/test/resources/fixtures/t016-hardware-candidate-a-2026-08-24.json",
+      "blob": "86c5aa56aceda663e6a9559f5331e6dfe8001533"
+    },
+    {
+      "path": "app/src/test/resources/fixtures/t017-telemetry-candidates.json",
+      "blob": "4fd656a736c1b4eb13737872b2d60d2d62b6b77f"
+    },
+    {
+      "path": "app/src/test/resources/fixtures/t030a-hardware-connect-status-19-2026-08-24.json",
+      "blob": "d771b0c664cdf7db99be624c8bbac8642424130e"
+    },
+    {
+      "path": "app/src/test/resources/fixtures/t030a-hardware-fed9-active-no-notification-2026-08-24.json",
+      "blob": "1e380aa42a9492fc18e9edc029f25072d86cfc8b"
+    },
+    {
+      "path": "app/src/test/resources/fixtures/t030a-hardware-fed9-notifications-2026-08-24.json",
+      "blob": "902fd1d358b786263c5ded9eed5759a29b0b71ea"
+    },
+    {
+      "path": "app/src/test/resources/fixtures/t031-prerequisite-fed9-front-left-transition-repeat-2026-08-24.json",
+      "blob": "a8d4bb74d07dd5aa2075ae338c2c19b0868f97dd"
+    },
+    {
+      "path": "app/src/test/resources/fixtures/t031-prerequisite-fed9-front-right-transition-2026-08-24.json",
+      "blob": "8eead5df1399977d66874cea616ceb1556655d27"
+    },
+    {
+      "path": "app/src/test/resources/fixtures/t031-prerequisite-fed9-rear-left-transition-2026-08-24.json",
+      "blob": "42a848c30936742eaa665e6566d3a3d03e619a47"
+    },
+    {
+      "path": "app/src/test/resources/fixtures/t031-prerequisite-fed9-rear-right-transition-2026-08-24.json",
+      "blob": "b52ce97f382e2e52feafaf33c5509b453343f321"
+    },
+    {
+      "path": "app/src/test/resources/fixtures/t032-hardware-manual-drive-2026-08-24.json",
+      "blob": "5bb75b8bb5cc63edbee8a5c4ed4b7f740480439b"
+    },
+    {
+      "path": "docs/AI_ARCHITECTURE.md",
+      "blob": "d43ce9582732d6659a7ec809096d1f181007610a"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "blob": "4fc5bf0f954fd5e9a88807898a78a342261e1969"
+    },
+    {
+      "path": "docs/CODING_STANDARDS.md",
+      "blob": "f373ab7f5a3f3dde623bf80421f1a8315559dbfb"
+    },
+    {
+      "path": "docs/CONNECTED_DEVICE_SERVICE.md",
+      "blob": "0b5ac5b573ef2e8426faef01117aceefab698ab8"
+    },
+    {
+      "path": "docs/DECISIONS.md",
+      "blob": "2deb7cfd09b23a3cb22c5f4ae72434219eb9e064"
+    },
+    {
+      "path": "docs/HARDWARE_VERIFICATION.md",
+      "blob": "b77cc0227735b5accb5dbf96f2cca6966064a4c2"
+    },
+    {
+      "path": "docs/LOOI_PROTOCOL_RESEARCH.md",
+      "blob": "a83608c6a2e06120919c6b260ab718e5312a0c8a"
+    },
+    {
+      "path": "docs/M0_VERIFICATION.md",
+      "blob": "20b5acddcc4f855cb44029faf9e4723fb62574cf"
+    },
+    {
+      "path": "docs/MEMORY_ARCHITECTURE.md",
+      "blob": "bc8d0df0fe1d7b30187e0c8c9a5d25cad275ad2f"
+    },
+    {
+      "path": "docs/OPEN_SOURCE_ATTRIBUTION.md",
+      "blob": "7289f44aed715ec17edf7c180d2ba8541432cd44"
+    },
+    {
+      "path": "docs/PROJECT_PLAN.md",
+      "blob": "058b4b683b80fca64dec0e78b328413a1108029d"
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "blob": "b2865f1468fba3620d14b9e2bf55d35f654572ec"
+    },
+    {
+      "path": "docs/SAFETY_MODEL.md",
+      "blob": "daf7f9e3c5517cf6f46b6386316f451c933d9692"
+    },
+    {
+      "path": "docs/SPARK_TASKS.md",
+      "blob": "7248938f7bde69f39203dac7090166201a68376b"
+    },
+    {
+      "path": "docs/T032_M2_ACCEPTANCE_RUN_2026-08-24_25.md",
+      "blob": "542cf0eb0f55fb2c0b31ac3f19b1d7fc9bba6f3b"
+    },
+    {
+      "path": "docs/TESTING_STRATEGY.md",
+      "blob": "ee39264414f38cefb681007d6b1ce48a176eab13"
+    }
+  ],
+  "claims": {
+    "runtimeBehaviorModified": false,
+    "historyResigned": false,
+    "hardwareReverified": false
+  }
+}

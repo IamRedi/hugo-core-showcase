@@ -1,0 +1,4 @@
+[
+  {"schemaVersion":"1.0","messageType":"event","requestId":"10000000-0000-4000-8000-000000000006","eventId":"20000000-0000-4000-8000-000000000051","sequence":0,"operation":"realtime","event":{"type":"started"}},
+  {"schemaVersion":"1.0","messageType":"event","requestId":"10000000-0000-4000-8000-000000000006","eventId":"20000000-0000-4000-8000-000000000052","sequence":1,"operation":"realtime","event":{"type":"cancelled","reason":"barge_in"}}
+]

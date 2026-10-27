@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0",
+  "recordId": "00000000-0000-4000-8000-000000000004",
+  "ownerIdentity": "ffffffff-0000-4000-8000-000000000001",
+  "layer": "DEVICE",
+  "type": "service_capability_note",
+  "scope": {
+    "kind": "device_instance",
+    "instanceId": "eeeeeeee-0000-4000-8000-000000000001",
+    "version": null
+  },
+  "subjects": [
+    "calendar_service"
+  ],
+  "content": {
+    "wireType": "symbol",
+    "value": "read_only"
+  },
+  "provenance": {
+    "origin": "tool_result",
+    "modelGenerated": false,
+    "sourceType": "memory.test",
+    "sourceReference": "memory_test",
+    "creator": "connector",
+    "observedAtEpochSecond": 700
+  },
+  "confidence": 500,
+  "validationState": "CANDIDATE",
+  "disposition": "ACTIVE",
+  "privacy": "private",
+  "allowedUse": "local_only",
+  "retention": {
+    "retentionClass": "UNTIL_CORRECTED",
+    "expiresAtEpochSecond": null
+  },
+  "supersedes": null,
+  "conflictsWith": [],
+  "lineage": null,
+  "tombstone": null,
+  "createdAtEpochSecond": 1000,
+  "updatedAtEpochSecond": null
+}

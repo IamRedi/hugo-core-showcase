@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "1.0",
+  "run": {
+    "runId": "t005-fixture-2026-08-24-001",
+    "capturedAtUnixMs": 1756001234000,
+    "capturedMonotonicMs": 1432,
+    "operatorTag": "lab-operator-A"
+  },
+  "redaction": {
+    "redactedDeviceId": "sha256:7f9c2b1a6e5f4d8a1234abcd5678ef90",
+    "redactedHardwareHint": "raised-stand, revision-unverified"
+  },
+  "gattInventory": {
+    "services": [
+      {
+        "uuid": "000000FF-0000-1000-8000-00805F9B34FB",
+        "isPrimary": true,
+        "characteristics": [
+          {
+            "uuid": "FEDE-0000-1000-8000-00805F9B34FB",
+            "properties": ["READ", "WRITE_NO_RESPONSE"],
+            "descriptors": ["2902"]
+          },
+          {
+            "uuid": "FED9-0000-1000-8000-00805F9B34FB",
+            "properties": ["NOTIFY"],
+            "descriptors": ["2902"]
+          }
+        ]
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "write",
+      "timestampMs": 2001,
+      "source": "fixture-script",
+      "serviceUuid": "000000FF-0000-1000-8000-00805F9B34FB",
+      "characteristicUuid": "FEDE-0000-1000-8000-00805F9B34FB",
+      "payloadHex": "0107",
+      "withResponse": true
+    },
+    {
+      "type": "notification",
+      "timestampMs": 2100,
+      "source": "fixture-script",
+      "serviceUuid": "000000FF-0000-1000-8000-00805F9B34FB",
+      "characteristicUuid": "FED9-0000-1000-8000-00805F9B34FB",
+      "payloadHex": "110100",
+      "isIndication": false
+    },
+    {
+      "type": "read",
+      "timestampMs": 2200,
+      "source": "fixture-script",
+      "serviceUuid": "000000FF-0000-1000-8000-00805F9B34FB",
+      "characteristicUuid": "FED9-0000-1000-8000-00805F9B34FB",
+      "payloadHex": ""
+    }
+  ],
+  "firmwareUnknowns": [
+    {
+      "component": "Profile mapping",
+      "summary": "Profile A/B support not yet validated against target hardware."
+    }
+  ],
+  "notes": "Minimal redacted fixture used by T005 parser tests."
+}

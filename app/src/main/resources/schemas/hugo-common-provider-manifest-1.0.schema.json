@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hugo.local/schemas/common-provider-manifest/1.0",
+  "title": "HUGO Common Provider Manifest 1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "digest",
+    "provider",
+    "adapter",
+    "capabilities",
+    "connectionMethods",
+    "requirements",
+    "compatibility",
+    "extensions",
+    "provenance"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "pattern": "^1\\.[0-9]+$" },
+    "digest": { "$ref": "#/$defs/digest" },
+    "provider": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["definitionId", "family", "displayName", "product"],
+      "properties": {
+        "definitionId": { "$ref": "#/$defs/scopedId" },
+        "family": { "enum": ["body_adapter", "device_adapter", "service_connector"] },
+        "displayName": { "$ref": "#/$defs/text" },
+        "product": {
+          "oneOf": [
+            { "type": "null" },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["vendor", "model", "version"],
+              "properties": {
+                "vendor": { "$ref": "#/$defs/nullableText" },
+                "model": { "$ref": "#/$defs/nullableText" },
+                "version": { "$ref": "#/$defs/nullableText" }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "adapter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "minimumVersionInclusive", "maximumVersionExclusive"],
+      "properties": {
+        "id": { "$ref": "#/$defs/scopedId" },
+        "minimumVersionInclusive": { "oneOf": [{ "$ref": "#/$defs/semanticVersion" }, { "type": "null" }] },
+        "maximumVersionExclusive": { "oneOf": [{ "$ref": "#/$defs/semanticVersion" }, { "type": "null" }] }
+      }
+    },
+    "capabilities": {
+      "type": "array",
+      "maxItems": 128,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[a-z][a-z0-9_]*(?:\\.[a-z][a-z0-9_]*)+@[1-9][0-9]*\\.(0|[1-9][0-9]*)$" }
+    },
+    "connectionMethods": {
+      "type": "array",
+      "maxItems": 32,
+      "items": { "$ref": "#/$defs/requiredReference" }
+    },
+    "requirements": {
+      "type": "array",
+      "maxItems": 32,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["kind", "reference", "required"],
+        "properties": {
+          "kind": { "enum": ["authentication", "permission", "safety", "risk", "lifecycle", "availability"] },
+          "reference": { "$ref": "#/$defs/contractReference" },
+          "required": { "type": "boolean" }
+        }
+      }
+    },
+    "compatibility": {
+      "type": "array",
+      "maxItems": 32,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["subject", "minimumVersionInclusive", "maximumVersionExclusive"],
+        "properties": {
+          "subject": { "enum": ["provider_firmware", "provider_software", "provider_api"] },
+          "minimumVersionInclusive": { "oneOf": [{ "$ref": "#/$defs/semanticVersion" }, { "type": "null" }] },
+          "maximumVersionExclusive": { "oneOf": [{ "$ref": "#/$defs/semanticVersion" }, { "type": "null" }] }
+        }
+      }
+    },
+    "extensions": {
+      "type": "array",
+      "maxItems": 32,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "schemaVersion", "digest"],
+        "properties": {
+          "id": { "$ref": "#/$defs/scopedId" },
+          "schemaVersion": { "$ref": "#/$defs/schemaVersion" },
+          "digest": { "$ref": "#/$defs/digest" }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source", "issuer", "sourceReference", "evidence"],
+      "properties": {
+        "source": { "enum": ["project", "adapter_package", "vendor", "administrator", "local_configuration"] },
+        "issuer": { "$ref": "#/$defs/text" },
+        "sourceReference": { "type": "string", "minLength": 1, "maxLength": 256 },
+        "evidence": { "enum": ["declared", "documented", "automated_tested", "device_verified", "hardware_verified"] }
+      }
+    }
+  },
+  "$defs": {
+    "text": { "type": "string", "minLength": 1, "maxLength": 160 },
+    "nullableText": { "oneOf": [{ "$ref": "#/$defs/text" }, { "type": "null" }] },
+    "schemaVersion": { "type": "string", "pattern": "^[1-9][0-9]*\\.(0|[1-9][0-9]*)$" },
+    "semanticVersion": { "type": "string", "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$" },
+    "digest": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" },
+    "scopedId": { "type": "string", "pattern": "^[a-z][a-z0-9]*(?:\\.[a-z][a-z0-9]*)*/[a-z][a-z0-9]*(?:[-_][a-z0-9]+)*$" },
+    "contractReference": { "type": "string", "pattern": "^[a-z][a-z0-9]*(?:\\.[a-z][a-z0-9_]*)*/[a-z][a-z0-9_]*(?:[-_][a-z0-9]+)*@[1-9][0-9]*\\.(0|[1-9][0-9]*)$" },
+    "requiredReference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reference", "required"],
+      "properties": {
+        "reference": { "$ref": "#/$defs/contractReference" },
+        "required": { "type": "boolean" }
+      }
+    }
+  }
+}

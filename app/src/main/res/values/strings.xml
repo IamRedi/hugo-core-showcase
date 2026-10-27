@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name" translatable="false">REDI Robot</string>
+    <string name="first_life_introduction">Përshëndetje. Unë jam HUGO. Kush je ti?</string>
+    <string name="first_life_name_greeting">Gëzohem që të njoh, %1$s.</string>
+</resources>

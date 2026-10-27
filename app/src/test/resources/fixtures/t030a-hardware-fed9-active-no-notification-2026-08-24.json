@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "1.0",
+  "run": {
+    "runId": "t030a-hardware-fed9-active-no-notification-2026-08-24-001",
+    "capturedAtUnixMs": 1787594344905,
+    "capturedMonotonicMs": 0,
+    "operatorTag": "physical-fed9-diagnostic"
+  },
+  "redaction": {
+    "redactedDeviceId": "redacted-looi-device",
+    "redactedHardwareHint": "real LOOI base; stable identifiers not retained"
+  },
+  "gattInventory": {
+    "services": [
+      {
+        "uuid": "000000FF-0000-1000-8000-00805F9B34FB",
+        "isPrimary": true,
+        "characteristics": [
+          { "uuid": "0000FED0-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "0000FED1-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "0000FED2-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "0000FED4-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "0000FED5-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "0000FED6-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "0000FED7-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "0000FED8-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "0000FED9-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "0000FEDA-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] }
+        ]
+      }
+    ]
+  },
+  "events": [],
+  "firmwareUnknowns": [
+    {
+      "component": "FED9 notification behavior",
+      "summary": "The FED9 CCCD subscription reached ACTIVE, but no notification payload was observed during the bounded active interval."
+    },
+    {
+      "component": "Connection lifetime",
+      "summary": "Capture reached ACTIVE at Unix ms 1787594344905 and stopped at 1787594346856 when the service-owned connection failed with Android GATT status 19, an active interval of approximately 1951 ms."
+    },
+    {
+      "component": "Sensor semantics",
+      "summary": "No cliff, contact, direction, polarity, or other sensor meaning was inferred or verified."
+    }
+  ],
+  "notes": "Read-only physical diagnostic on Samsung SM-S928B, Android 16/API 36. No handshake, characteristic command write, actuation, or exploratory protocol prerequisite was sent. Empty events means no FED9 notification was observed, not that FED9 has no telemetry behavior."
+}

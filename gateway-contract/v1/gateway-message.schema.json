@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hugo.invalid/contracts/gateway/v1/gateway-message.schema.json",
+  "title": "HUGO AI Gateway Message 1.0",
+  "type": "object",
+  "oneOf": [
+    { "$ref": "#/$defs/request" },
+    { "$ref": "#/$defs/cancel" },
+    { "$ref": "#/$defs/event" }
+  ],
+  "$defs": {
+    "uuid": { "type": "string", "format": "uuid" },
+    "version": { "const": "1.0" },
+    "operation": { "enum": ["text", "realtime", "vision", "embedding"] },
+    "budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["maximumOutputUnits", "timeoutMs"],
+      "properties": {
+        "maximumOutputUnits": { "type": "integer", "minimum": 1, "maximum": 32768 },
+        "timeoutMs": { "type": "integer", "minimum": 100, "maximum": 120000 }
+      }
+    },
+    "request": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schemaVersion", "messageType", "requestId", "operation", "payload"],
+      "properties": {
+        "schemaVersion": { "$ref": "#/$defs/version" },
+        "messageType": { "const": "request" },
+        "requestId": { "$ref": "#/$defs/uuid" },
+        "operation": { "$ref": "#/$defs/operation" },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "prompt": { "type": "string", "minLength": 1, "maxLength": 8192 },
+            "attachmentReference": { "type": "string", "pattern": "^[a-z][a-z0-9_]{0,31}:[A-Za-z0-9_-]{8,96}$" },
+            "embeddingInputs": { "type": "array", "minItems": 1, "maxItems": 64, "items": { "type": "string", "minLength": 1, "maxLength": 8192 } },
+            "realtime": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["inputModalities", "outputModalities"],
+              "properties": {
+                "inputModalities": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "enum": ["audio", "text"] } },
+                "outputModalities": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "enum": ["audio", "text"] } }
+              }
+            },
+            "declaredSkills": { "type": "array", "maxItems": 32, "uniqueItems": true, "items": { "type": "string", "pattern": "^[a-z][a-z0-9]*(?:[.][a-z][a-z0-9_]*)+@[0-9]{1,3}[.][0-9]{1,3}$" } },
+            "budget": { "$ref": "#/$defs/budget" }
+          },
+          "required": ["declaredSkills", "budget"]
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "operation": { "const": "text" } } },
+          "then": { "properties": { "payload": { "required": ["prompt", "declaredSkills", "budget"], "not": { "anyOf": [{ "required": ["attachmentReference"] }, { "required": ["embeddingInputs"] }, { "required": ["realtime"] }] } } } }
+        },
+        {
+          "if": { "properties": { "operation": { "const": "vision" } } },
+          "then": { "properties": { "payload": { "required": ["prompt", "attachmentReference", "declaredSkills", "budget"], "not": { "anyOf": [{ "required": ["embeddingInputs"] }, { "required": ["realtime"] }] } } } }
+        },
+        {
+          "if": { "properties": { "operation": { "const": "embedding" } } },
+          "then": { "properties": { "payload": { "required": ["embeddingInputs", "declaredSkills", "budget"], "properties": { "declaredSkills": { "maxItems": 0 } }, "not": { "anyOf": [{ "required": ["prompt"] }, { "required": ["attachmentReference"] }, { "required": ["realtime"] }] } } } }
+        },
+        {
+          "if": { "properties": { "operation": { "const": "realtime" } } },
+          "then": { "properties": { "payload": { "required": ["realtime", "declaredSkills", "budget"], "not": { "anyOf": [{ "required": ["prompt"] }, { "required": ["attachmentReference"] }, { "required": ["embeddingInputs"] }] } } } }
+        }
+      ]
+    },
+    "cancel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schemaVersion", "messageType", "requestId", "cancellationId", "reason"],
+      "properties": {
+        "schemaVersion": { "$ref": "#/$defs/version" },
+        "messageType": { "const": "cancel" },
+        "requestId": { "$ref": "#/$defs/uuid" },
+        "cancellationId": { "$ref": "#/$defs/uuid" },
+        "reason": { "enum": ["user", "barge_in", "background", "deadline", "client_shutdown"] }
+      }
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schemaVersion", "messageType", "requestId", "eventId", "sequence", "operation", "event"],
+      "properties": {
+        "schemaVersion": { "$ref": "#/$defs/version" },
+        "messageType": { "const": "event" },
+        "requestId": { "$ref": "#/$defs/uuid" },
+        "eventId": { "$ref": "#/$defs/uuid" },
+        "sequence": { "type": "integer", "minimum": 0, "maximum": 1000000 },
+        "operation": { "$ref": "#/$defs/operation" },
+        "event": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type"],
+          "properties": {
+            "type": { "enum": ["started", "partial_text", "tool_proposal", "refusal", "embedding", "usage", "completed", "failed", "cancelled", "timed_out"] },
+            "text": { "type": "string", "minLength": 1, "maxLength": 8192 },
+            "proposalId": { "$ref": "#/$defs/uuid" },
+            "skill": { "type": "string" },
+            "arguments": { "type": "object", "maxProperties": 32 },
+            "reason": { "type": "string" },
+            "inputIndex": { "type": "integer", "minimum": 0, "maximum": 63 },
+            "vector": { "type": "array", "minItems": 1, "maxItems": 4096, "items": { "type": "number" } },
+            "evidence": { "enum": ["measured", "estimated", "unknown"] },
+            "inputUnits": { "type": "integer", "minimum": 0 },
+            "outputUnits": { "type": "integer", "minimum": 0 },
+            "estimatedCost": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["currency", "micros"],
+              "properties": { "currency": { "type": "string", "pattern": "^[A-Z]{3}$" }, "micros": { "type": "integer", "minimum": 0 } }
+            },
+            "code": { "type": "string" },
+            "retryable": { "type": "boolean" }
+          }
+        }
+      }
+    }
+  }
+}

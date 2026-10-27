@@ -1,0 +1,6 @@
+{
+  "schemaVersion": "1.0",
+  "run": {
+    "runId": "t005-malformed",
+    "capturedAtUnixMs": 1756001235000,
+    "capturedMonotonicMs": 1200

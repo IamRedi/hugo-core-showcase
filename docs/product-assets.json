@@ -1,0 +1,95 @@
+{
+  "review": "Unchanged owner-provided HUGO product artwork/concepts; embedded SVG provenance preserved. Official Gradle 8.10.2 wrapper JAR checksum verified. No original phone screenshots.",
+  "assets": [
+    {
+      "path": "app/src/main/assets/hugo/hugo-face.svg",
+      "sha256": "7d1acd1d43bb79c5212ba28f158f544939530a036f39d562006482be08046684",
+      "kind": "owner_product_artwork"
+    },
+    {
+      "path": "app/src/main/res/drawable-nodpi/hugo_face.png",
+      "sha256": "c65e0601a8b3e5d143060a88086fa01f4e1a8370ecd29f0a3383b963a1c2f5a2",
+      "kind": "owner_product_artwork"
+    },
+    {
+      "path": "app/src/main/res/drawable-nodpi/hugo_face_base.png",
+      "sha256": "293f26d39f15682e37898c2c53dfc24574efcca0be68e195644f8a300fd33b33",
+      "kind": "owner_product_artwork"
+    },
+    {
+      "path": "app/src/main/res/drawable-nodpi/hugo_face_boot.png",
+      "sha256": "b33a134e09657c6583a48f904807ce6b1eab029c3020f23ab1294fc0e9d59080",
+      "kind": "owner_product_artwork"
+    },
+    {
+      "path": "app/src/main/res/drawable-nodpi/hugo_face_no_eyes.png",
+      "sha256": "06c5bbf327a790683500277a5a2408ebee74a764151bc053d21e1bbfc8f0a78c",
+      "kind": "owner_product_artwork"
+    },
+    {
+      "path": "app/src/main/res/drawable-nodpi/hugo_left_eye.png",
+      "sha256": "1cd38511e15a0a3e1ff6e01cc7c6e67d519a430d7f1d62dcc6058b3191f84c2b",
+      "kind": "owner_product_artwork"
+    },
+    {
+      "path": "app/src/main/res/drawable-nodpi/hugo_left_eye_globe.png",
+      "sha256": "f719c63bca39639e1655cb51004311fb06c783f1a1c7c83f84d7b6aab9433980",
+      "kind": "owner_product_artwork"
+    },
+    {
+      "path": "app/src/main/res/drawable-nodpi/hugo_left_eye_ready.png",
+      "sha256": "9a0c3fd90fe6bdc4d9e9cb14b29040d51c5784cd44c373faf1aaac3eb39ec463",
+      "kind": "owner_product_artwork"
+    },
+    {
+      "path": "app/src/main/res/drawable-nodpi/hugo_left_eye_socket.png",
+      "sha256": "a5cbad7b54ac109e541a630ac6cc00d9c930a77eda70649246b6cda4029751c3",
+      "kind": "owner_product_artwork"
+    },
+    {
+      "path": "app/src/main/res/drawable-nodpi/hugo_mouth.png",
+      "sha256": "2e4a1cddff5790841c73a789aa3e5fffe8589901050acceed3f1d7225a1e3588",
+      "kind": "owner_product_artwork"
+    },
+    {
+      "path": "app/src/main/res/drawable-nodpi/hugo_right_eye.png",
+      "sha256": "0e17058d21316903b2f8d317247b37a5a751ea62953240d4db5506bd67c3d168",
+      "kind": "owner_product_artwork"
+    },
+    {
+      "path": "app/src/main/res/drawable-nodpi/hugo_right_eye_globe.png",
+      "sha256": "1b43b82fde53d50885d4c84850d85e6ead112781f7be7daf6c50c3636cb79f6a",
+      "kind": "owner_product_artwork"
+    },
+    {
+      "path": "app/src/main/res/drawable-nodpi/hugo_right_eye_ready.png",
+      "sha256": "c7d8b349274e29957317b3b1ce1ceb1aff4d03dff14c00c534884730d4e0e14a",
+      "kind": "owner_product_artwork"
+    },
+    {
+      "path": "app/src/main/res/drawable-nodpi/hugo_right_eye_socket.png",
+      "sha256": "14aebc4f9d89ef94fab73f992ebd06f2b02aa5069d3159d0c3456404e11caad3",
+      "kind": "owner_product_artwork"
+    },
+    {
+      "path": "design/hugo-identity/concepts/hugo-spirit-amber-masculine-v1.png",
+      "sha256": "dcf7548076ad3548e2dc8289ef201fa20a2772a4a7c6a6ecf181b3f2378ec716",
+      "kind": "owner_product_artwork"
+    },
+    {
+      "path": "design/hugo-identity/concepts/hugo-spirit-amber-masculine-v2.png",
+      "sha256": "4e235e5070acd67f45c3648fe1f9dc4a0d196a9d56ee11e4fa6861773ad40eed",
+      "kind": "owner_product_artwork"
+    },
+    {
+      "path": "design/hugo-identity/concepts/hugo-spirit-amber-soft-v1.png",
+      "sha256": "2afa16e227b6f08321da2c813ccac638a62799bfe1887af931ea4dddd1fbc44d",
+      "kind": "owner_product_artwork"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.jar",
+      "sha256": "2db75c40782f5e8ba1fc278a5574bab070adccb2d21ca5a6e5ed840888448046",
+      "kind": "official_gradle_wrapper"
+    }
+  ]
+}

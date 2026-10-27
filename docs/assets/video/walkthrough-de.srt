@@ -1,0 +1,35 @@
+1
+00:00:00,000 --> 00:00:05,000
+Eine Identität. Viele mögliche Körper. Persistente lokale Identität · native Android-UI
+
+2
+00:00:05,000 --> 00:00:10,000
+Ein Vorschlag erteilt keine Ausführungsbefugnis. Skript-Vorschlag · explizite einmalige Bestätigung
+
+3
+00:00:10,000 --> 00:00:15,000
+Deterministischer Code prüft und führt aus. Bestehender SafetyController · nur simuliertes Licht
+
+4
+00:00:15,000 --> 00:00:20,000
+Ungültige Befehle werden abgewiesen. Überhöhte Geschwindigkeit: lokale Regeln lehnen ab
+
+5
+00:00:20,000 --> 00:00:24,000
+Alte Generationen verlieren ihre Befugnis. Virtuelles Reconnect macht alten Vorschlag ungültig
+
+6
+00:00:24,000 --> 00:00:28,000
+Lokaler Stopp. Ohne Modellabhängigkeit. Gelatchter Not-Stopp · kein physischer Roboter gezeigt
+
+7
+00:00:28,000 --> 00:00:33,000
+Ein Modell kann sich nicht selbst bestätigen. Echte H061-Factory · synthetisches, flüchtiges Envelope
+
+8
+00:00:33,000 --> 00:00:38,000
+Explizite Korrekturen. Nachvollziehbare Herkunft. Nutzerkorrektur-Entwurf · hier kein dauerhafter Commit
+
+9
+00:00:38,000 --> 00:00:43,000
+Ingenieurarbeit, die sich prüfen lässt. Typisierte Verträge · Modulgrenzen · adversariale Tests

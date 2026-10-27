@@ -1,0 +1,32 @@
+# Gradle / Android
+.gradle/
+.kotlin/
+build/
+**/build/
+local.properties
+captures/
+*.hprof
+
+# IDEs and local editor state
+.idea/
+*.iml
+.vscode/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+secrets.properties
+*.jks
+*.keystore
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Isolated evaluation and media tooling
+.showcase/
+.media-work/
+*.apk
+*.apks
+*.log

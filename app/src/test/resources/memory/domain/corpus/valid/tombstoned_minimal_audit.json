@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0",
+  "recordId": "00000000-0000-4000-8000-000000000009",
+  "ownerIdentity": "ffffffff-0000-4000-8000-000000000001",
+  "layer": "SEMANTIC",
+  "type": "fact",
+  "scope": {
+    "kind": "global_personal",
+    "instanceId": null,
+    "version": null
+  },
+  "subjects": [
+    "language"
+  ],
+  "content": null,
+  "provenance": {
+    "origin": "model_inferred",
+    "modelGenerated": true,
+    "sourceType": "memory.test",
+    "sourceReference": "memory_test",
+    "creator": "gateway",
+    "observedAtEpochSecond": 900
+  },
+  "confidence": null,
+  "validationState": "CANDIDATE",
+  "disposition": "TOMBSTONED",
+  "privacy": "private",
+  "allowedUse": "gateway_allowed",
+  "retention": null,
+  "supersedes": null,
+  "conflictsWith": [
+    "00000000-0000-4000-8000-000000000007"
+  ],
+  "lineage": {
+    "derivedFrom": [
+      "00000000-0000-4000-8000-000000000002"
+    ]
+  },
+  "tombstone": {
+    "tombstonedAtEpochSecond": 8888,
+    "actor": "user_control"
+  },
+  "createdAtEpochSecond": 1000,
+  "updatedAtEpochSecond": null
+}

@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        tools:node="replace" />
+
+    <application>
+        <activity
+            android:name=".platform.context.sources.H044ContextSourceVerificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".platform.service.googlecalendar.H043GoogleCalendarFeasibilityActivity"
+            android:exported="true" />
+    </application>
+</manifest>

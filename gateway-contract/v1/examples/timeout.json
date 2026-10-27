@@ -1,0 +1,4 @@
+[
+  {"schemaVersion":"1.0","messageType":"event","requestId":"10000000-0000-4000-8000-000000000004","eventId":"20000000-0000-4000-8000-000000000031","sequence":0,"operation":"realtime","event":{"type":"started"}},
+  {"schemaVersion":"1.0","messageType":"event","requestId":"10000000-0000-4000-8000-000000000004","eventId":"20000000-0000-4000-8000-000000000032","sequence":1,"operation":"realtime","event":{"type":"timed_out"}}
+]

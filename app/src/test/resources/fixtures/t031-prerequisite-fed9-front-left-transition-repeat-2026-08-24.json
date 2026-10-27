@@ -1,0 +1,981 @@
+{
+    "schemaVersion": "1.0",
+    "run": {
+        "runId": "fed9-capture-1333430632",
+        "capturedAtUnixMs": 1787597771565,
+        "capturedMonotonicMs": 1333430632,
+        "operatorTag": "fed9-diagnostic"
+    },
+    "redaction": {
+        "redactedDeviceId": "redacted-looi-device"
+    },
+    "gattInventory": {
+        "services": [
+            {
+                "uuid": "00001801-0000-1000-8000-00805f9b34fb",
+                "isPrimary": true,
+                "characteristics": [
+                    {
+                        "uuid": "00002a05-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    }
+                ]
+            },
+            {
+                "uuid": "00001800-0000-1000-8000-00805f9b34fb",
+                "isPrimary": true,
+                "characteristics": [
+                    {
+                        "uuid": "00002a00-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "00002a01-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "00002aa6-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    }
+                ]
+            },
+            {
+                "uuid": "00008018-0000-1000-8000-00805f9b34fb",
+                "isPrimary": true,
+                "characteristics": [
+                    {
+                        "uuid": "00008020-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "00008021-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "00008022-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "00008023-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    }
+                ]
+            },
+            {
+                "uuid": "0000180a-0000-1000-8000-00805f9b34fb",
+                "isPrimary": true,
+                "characteristics": [
+                    {
+                        "uuid": "00002a24-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "00002a25-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "00002a26-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "00002a27-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "00002a28-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "00002a29-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "00002a2a-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "00002a2b-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    }
+                ]
+            },
+            {
+                "uuid": "6e400001-b5a3-f393-e0a9-e50e24dcff00",
+                "isPrimary": true,
+                "characteristics": [
+                    {
+                        "uuid": "0000ff01-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000ff02-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    }
+                ]
+            },
+            {
+                "uuid": "000000ff-0000-1000-8000-00805f9b34fb",
+                "isPrimary": true,
+                "characteristics": [
+                    {
+                        "uuid": "0000fed0-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000fed1-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000fed2-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000fed3-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000fe00-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000fed5-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000fed6-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000fed7-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000fed8-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000feda-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000fedf-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000fed4-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    },
+                    {
+                        "uuid": "0000fef0-0000-1000-8000-00805f9b34fb",
+                        "properties": [],
+                        "descriptors": []
+                    }
+                ]
+            }
+        ]
+    },
+    "events": [
+        {
+            "type": "notification",
+            "timestampMs": 716,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0ecc00",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 784,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0eff1f",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 1762,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0eb300",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 1839,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0eff1f",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 7072,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0ec800",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 7149,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0eff1f",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 7765,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0e8c00",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 7839,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0eff1f",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 15409,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0ed900",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 15505,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0eff1f",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 26751,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0e9500",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 26809,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0eff1f",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 27534,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0ec000",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 27609,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0eff1f",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 29182,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0ed300",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 29260,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0eff1f",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 32482,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0eda00",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 32559,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0ebc00",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 32650,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0e9100",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 32831,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0eff1f",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 33097,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0ef800",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 33175,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0ed100",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 33264,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0ec100",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 33788,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0eb600",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 33878,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0100010101",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 33949,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0eaa00",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 34121,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0101010101",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 34239,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0100010101",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 35017,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0eb900",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 35171,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0ead00",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 35528,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0e9b00",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 36533,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0101010101",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 36817,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0100010101",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 37266,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0eae00",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 37974,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0ecc00",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 38048,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0ee400",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 38124,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0e1d01",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 38211,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0eff1f",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 49462,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0e5401",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 49521,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0ed300",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 49615,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0ea900",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 49796,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0e9c00",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 49961,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0e8d00",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 50241,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0e8100",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 50618,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0101010101",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 50629,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0100010101",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 50851,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0e8d00",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 50853,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0101010101",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 51215,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0100010101",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 54504,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0e9a00",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 54757,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0ea500",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 55777,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0101010101",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 55885,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0100010101",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 56136,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0e9800",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 57203,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0ea400",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 57728,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0e9200",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 58942,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0ea400",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 59467,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0eca00",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 59546,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0efe00",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 59619,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0e4401",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 59709,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0eff1f",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 86172,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0ece00",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 86259,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0eb900",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 86351,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0eac00",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 86706,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0e9200",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 86861,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0ea100",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 87142,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0e9100",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 87203,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0e6a00",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 87294,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0e4300",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 87303,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0101010101",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 87385,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0e3800",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 87461,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0100010101",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 87468,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0e4c00",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 87564,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0ea400",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 87656,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0eb000",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 87696,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0101010101",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 88084,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0ebc00",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 88537,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0ed100",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 88614,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0eec00",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 88689,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0e1d01",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 88779,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0eca00",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 88962,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0eb200",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 89049,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0eff1f",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 109433,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0ea400",
+            "isIndication": false
+        },
+        {
+            "type": "notification",
+            "timestampMs": 109493,
+            "source": "fed9-diagnostic",
+            "serviceUuid": "000000ff-0000-1000-8000-00805f9b34fb",
+            "characteristicUuid": "0000fed9-0000-1000-8000-00805f9b34fb",
+            "payloadHex": "0eff1f",
+            "isIndication": false
+        }
+    ],
+    "firmwareUnknowns": [],
+    "notes": "Read-only FED9 diagnostic; profileCandidate=PROFILE_A/v1; selectionMode=AMBIGUOUS; profileVerified=false; generation=1; records=85"
+}

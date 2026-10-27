@@ -1,0 +1,38 @@
+openapi: 3.1.0
+info:
+  title: HUGO AI Gateway Contract
+  version: 1.0.0
+  description: Provider-neutral contract artifact only; authentication and backend are outside H051.
+paths:
+  /v1/operations:
+    post:
+      summary: Begin a bounded gateway operation
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: ./gateway-message.schema.json
+      responses:
+        '202':
+          description: Accepted for a later authenticated streaming transport
+  /v1/operations/{requestId}/cancellations:
+    post:
+      summary: Request cancellation of an exact correlated operation
+      parameters:
+        - in: path
+          name: requestId
+          required: true
+          schema: { type: string, format: uuid }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: ./gateway-message.schema.json
+      responses:
+        '202': { description: Cancellation request accepted, not confirmation of cancellation }
+components:
+  schemas:
+    GatewayMessage:
+      $ref: ./gateway-message.schema.json

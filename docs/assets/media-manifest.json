@@ -1,0 +1,212 @@
+{
+  "source_head": "cf03ce5366b8ce41637837a02d41913db88bf265",
+  "review_state": "DRAFT_OWNER_REVIEW",
+  "environment": "isolated Android 35 x86_64 emulator; io.redi.hugo.showcase",
+  "captured_at": "2026-10-27T19:35:06.426088+00:00",
+  "apk_sha256": "0f7f8533d235e0aaf211e30cf124162160297f6da51cb994d56513f04eb46ea7",
+  "video_method": "silent captioned montage of actual native application screenshots",
+  "real_ai_provider_calls": 0,
+  "physical_device_commands": 0,
+  "owner_data": 0,
+  "memory_lab_persistence": false,
+  "captions": [
+    "de",
+    "en"
+  ],
+  "media": [
+    {
+      "path": "docs/assets/hero.png",
+      "sha256": "51f8999a369456425f0c498b3ca6dbb2f9c12de298254ed553d6c6580a787858",
+      "bytes": 226853,
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "path": "docs/assets/screenshots/approved.png",
+      "sha256": "ad9ab7377ef68392a725f1e0aa74caa0f4c1ee969e2e1ceb0aab62e9f28d798c",
+      "bytes": 114344,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "path": "docs/assets/screenshots/approved.webp",
+      "sha256": "5db039402e96fb6ee4f01ceb9cd8b89d27fef41a14f4c51b8f2d2c34bda39d92",
+      "bytes": 64728,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "path": "docs/assets/screenshots/architecture.png",
+      "sha256": "07567d255d7b0bf7106099072b6ccd554a8d9927bf0c4f11940cb35be51eaf09",
+      "bytes": 134303,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "path": "docs/assets/screenshots/architecture.webp",
+      "sha256": "9adbd6316a48922d97f8e812692ede71b516bf61099fc5c2e4277992346eb6e4",
+      "bytes": 79322,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "path": "docs/assets/screenshots/blocked.png",
+      "sha256": "7d0becf319f72e945e7ce3c3d9d198af71d85a9d8fb09eca5c93961f53b7b8f3",
+      "bytes": 114099,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "path": "docs/assets/screenshots/blocked.webp",
+      "sha256": "ec447e2eeb9c94b3e1a1aefccaf78f12aa668bd11a6dfee1ca55eefabac1f5ef",
+      "bytes": 65676,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "path": "docs/assets/screenshots/generation.png",
+      "sha256": "392c0bd04ee586ba9b53beec5883e25a6aae09375659ce94f8670c0b24a57e3f",
+      "bytes": 113492,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "path": "docs/assets/screenshots/generation.webp",
+      "sha256": "94658eeeaa73c2647a2f50a90522c944166b83734d974a43259189ff1ccdf180",
+      "bytes": 65460,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "path": "docs/assets/screenshots/memory-blocked.png",
+      "sha256": "a71b7d1faf81a3a6c2c58505cede08fcc7f0b048f423487b613b7bb921907310",
+      "bytes": 111627,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "path": "docs/assets/screenshots/memory-blocked.webp",
+      "sha256": "f5cf186ab9e3a63e32d1b6fb8e69ceecae2d4fcea5b3f3c59683a7ce28dc5247",
+      "bytes": 70120,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "path": "docs/assets/screenshots/memory-candidate.png",
+      "sha256": "21c5a9a8b4b5c012fe92b09152ad6ecee6c214ca678d457ee535c49d840b9f44",
+      "bytes": 108463,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "path": "docs/assets/screenshots/memory-candidate.webp",
+      "sha256": "7ffa5477ced8c7d5ba640d6679f8820d1e452b3400034f39f3b6e0bcd61f32f7",
+      "bytes": 66258,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "path": "docs/assets/screenshots/memory-correction.png",
+      "sha256": "8b317f5d6fa2c098862372c79798c160b80d49bd85e0e79f05efbfc6236b3213",
+      "bytes": 108019,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "path": "docs/assets/screenshots/memory-correction.webp",
+      "sha256": "bed12d1ce27ce2c0de31c3a10ce1650f1ad9c2eebf1069aa90789e7b51787c22",
+      "bytes": 65812,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "path": "docs/assets/screenshots/proposal.png",
+      "sha256": "c657ad4099c2c1d937e7b9d2801b1cb43b0a8a2a432ab6ff67385ef7f970dd3d",
+      "bytes": 112368,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "path": "docs/assets/screenshots/proposal.webp",
+      "sha256": "00f5891c7706d62e4d0d390aa02b947f20c1c95b24e15ff10402fa9522c387e6",
+      "bytes": 66378,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "path": "docs/assets/screenshots/runtime.png",
+      "sha256": "8681046c69bd6b831614520e500277275704d0e84703f06553eb9d26c4ac1b92",
+      "bytes": 176454,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "path": "docs/assets/screenshots/runtime.webp",
+      "sha256": "f087926b1b1d3f9d1522fa0d60509ed114de4e1275afc0115af6ad62b029b677",
+      "bytes": 74736,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "path": "docs/assets/screenshots/stop.png",
+      "sha256": "c5e3912b514a51769e6891dfbb3d58cc48ee72b85f0a75c903d846c5758d25b0",
+      "bytes": 112567,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "path": "docs/assets/screenshots/stop.webp",
+      "sha256": "ae5cb4fd590143afb3ba0a059a7d0b1ea548337bb6443a985e44e26f86a58cf7",
+      "bytes": 66746,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "path": "docs/assets/social-preview.png",
+      "sha256": "eba529151089e10fee2dce04619da8557a58326938b1b1885d6db07ae4494411",
+      "bytes": 218015,
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "path": "docs/assets/video/transcript.md",
+      "sha256": "6fa66216685c703817f8fc01878428df4d80721eb64dd1080cce739fb64880d9",
+      "bytes": 2286
+    },
+    {
+      "path": "docs/assets/video/walkthrough-de.mp4",
+      "sha256": "b2b47ea8da1b89288640f6f802ca46f53389597eae68b30c44c44ff095fcc49e",
+      "bytes": 668098,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 43,
+      "audio": false
+    },
+    {
+      "path": "docs/assets/video/walkthrough-de.srt",
+      "sha256": "d16ec3f72bf74c9da7424e2e500c75b5622ed37a6e5c8d554f4ebb22fbf12dfa",
+      "bytes": 1188
+    },
+    {
+      "path": "docs/assets/video/walkthrough-en.mp4",
+      "sha256": "453856f006250144e4fe2d371e5eb0c0f46959dc12f9baa74a585f99b1b0bd1c",
+      "bytes": 651096,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 43,
+      "audio": false
+    },
+    {
+      "path": "docs/assets/video/walkthrough-en.srt",
+      "sha256": "51a13b849d3c6e690560c704762f8084a85fe527ad1a12a91adeacc7a3465bd2",
+      "bytes": 1091
+    },
+    {
+      "path": "docs/assets/video/walkthrough-preview.webp",
+      "sha256": "0fe0c3539b691f39c4b2dd393835dd70a0bc44b9e58e320d2036fddc06360f2c",
+      "bytes": 106698,
+      "width": 960,
+      "height": 540
+    }
+  ]
+}

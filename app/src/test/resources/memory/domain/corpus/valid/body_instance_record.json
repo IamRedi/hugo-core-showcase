@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0",
+  "recordId": "00000000-0000-4000-8000-000000000003",
+  "ownerIdentity": "ffffffff-0000-4000-8000-000000000001",
+  "layer": "BODY",
+  "type": "calibration_quirk",
+  "scope": {
+    "kind": "body_instance",
+    "instanceId": "eeeeeeee-0000-4000-8000-000000000001",
+    "version": "profile_a"
+  },
+  "subjects": [
+    "lower_contact"
+  ],
+  "content": {
+    "wireType": "text",
+    "value": "quirk under cold start"
+  },
+  "provenance": {
+    "origin": "observed",
+    "modelGenerated": false,
+    "sourceType": "memory.test",
+    "sourceReference": "memory_test",
+    "creator": "hugo_runtime",
+    "observedAtEpochSecond": 800
+  },
+  "confidence": 600,
+  "validationState": "CANDIDATE",
+  "disposition": "ACTIVE",
+  "privacy": "private",
+  "allowedUse": "local_only",
+  "retention": {
+    "retentionClass": "UNTIL_CORRECTED",
+    "expiresAtEpochSecond": null
+  },
+  "supersedes": null,
+  "conflictsWith": [],
+  "lineage": null,
+  "tombstone": null,
+  "createdAtEpochSecond": 1000,
+  "updatedAtEpochSecond": null
+}

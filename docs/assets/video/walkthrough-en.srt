@@ -1,0 +1,35 @@
+1
+00:00:00,000 --> 00:00:05,000
+One identity. Many possible bodies. Persistent local identity · native Android UI
+
+2
+00:00:05,000 --> 00:00:10,000
+A proposal grants no execution authority. Scripted intent · explicit one-time confirmation
+
+3
+00:00:10,000 --> 00:00:15,000
+Deterministic code checks and executes. Existing SafetyController · simulated light only
+
+4
+00:00:15,000 --> 00:00:20,000
+Invalid commands fail closed. Overspeed rejected by the actual local safety rules
+
+5
+00:00:20,000 --> 00:00:24,000
+Old generations lose their authority. Virtual reconnect invalidates the pending proposal
+
+6
+00:00:24,000 --> 00:00:28,000
+Local stop. No model dependency. Latched E-stop reducer · no physical robot shown
+
+7
+00:00:28,000 --> 00:00:33,000
+A model cannot validate its own belief. Actual H061 factory · synthetic, ephemeral envelope
+
+8
+00:00:33,000 --> 00:00:38,000
+Explicit corrections. Traceable provenance. User correction draft · no durable store commit here
+
+9
+00:00:38,000 --> 00:00:43,000
+Engineering you can inspect. Typed contracts · boundary guards · adversarial tests

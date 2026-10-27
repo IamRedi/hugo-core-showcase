@@ -1,0 +1,6 @@
+[
+  {"schemaVersion":"1.0","messageType":"event","requestId":"10000000-0000-4000-8000-000000000005","eventId":"20000000-0000-4000-8000-000000000041","sequence":0,"operation":"embedding","event":{"type":"started"}},
+  {"schemaVersion":"1.0","messageType":"event","requestId":"10000000-0000-4000-8000-000000000005","eventId":"20000000-0000-4000-8000-000000000042","sequence":1,"operation":"embedding","event":{"type":"embedding","inputIndex":0,"vector":[0.125,-0.25,0.5]}},
+  {"schemaVersion":"1.0","messageType":"event","requestId":"10000000-0000-4000-8000-000000000005","eventId":"20000000-0000-4000-8000-000000000043","sequence":2,"operation":"embedding","event":{"type":"usage","evidence":"unknown"}},
+  {"schemaVersion":"1.0","messageType":"event","requestId":"10000000-0000-4000-8000-000000000005","eventId":"20000000-0000-4000-8000-000000000044","sequence":3,"operation":"embedding","event":{"type":"completed","reason":"complete"}}
+]

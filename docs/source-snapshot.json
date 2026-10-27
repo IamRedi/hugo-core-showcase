@@ -1,0 +1,890 @@
+{
+  "source_repository": "IamRedi/hugo-core",
+  "source_commit": "cf03ce5366b8ce41637837a02d41913db88bf265",
+  "original_production_kotlin_unchanged": [
+    {
+      "path": "app/src/main/java/io/redi/robot/adapter/api/AdapterDescriptorCodec.kt",
+      "sha256_lf": "9f39fde67d04acd69a6f5555429bd6d0d86ce3e75123e2fa007aaa2d075ed98b"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/adapter/api/AdapterIdentityIntegrity.kt",
+      "sha256_lf": "8c3f1e62fd72e7911878fd7d0f0809ef048838f6b1af3960e8b22e49faa886e8"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/adapter/compatibility/CompatibilityMatcher.kt",
+      "sha256_lf": "65672dd5fb6e17e8d6517ccbf618b6468ca47a57e9b559a8fbf4decc65351f81"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/adapter/compatibility/CompatibilityModel.kt",
+      "sha256_lf": "c6a9891eccdf35c73be9314531d7fb6c07f4ff8f112ac3137125ab40023b8ef3"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/adapter/registry/AdapterRegistry.kt",
+      "sha256_lf": "7dfaa312cd9a467658da5fce6a16341c49f14f06eded9e07b2c9a0f0b1a036ca"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/adapter/registry/AdapterRegistryModel.kt",
+      "sha256_lf": "4dd6bf4cc97220d460dfbeb3cd5a6fd310fb1d8ae5a9051f738b1ba3e1cdfa98"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/adapter/service/googlecalendar/GoogleCalendarReadOnlySandbox.kt",
+      "sha256_lf": "d89e9abf45e35319dba0fd5ddbda68e2e67db69d65a89f52eec978852ab1bf7d"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/adapter/storage/AdapterRegistryPersistence.kt",
+      "sha256_lf": "9333c0616a6322a79f68b6fcdba4ab55ea2c5c254dbce10caeaf433b734733d6"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/adapter/storage/AdapterRegistryPersistenceModel.kt",
+      "sha256_lf": "ad716b44c5020e6a02af4268bd31ea6abecdf19bec32e634df051926ba702dfd"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/adapter/storage/AdapterRegistrySnapshotCodec.kt",
+      "sha256_lf": "e864bf0ed4cdf08be9d8d9393d3f522dc507573399fdfa97b84ec4e4755af310"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/ai/gateway/GatewayClient.kt",
+      "sha256_lf": "b8b2fadea201b56e028cf63074cba508e31ea7b1c8c9a7a762c8543b691c0250"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/ai/gateway/GatewayStreamReducer.kt",
+      "sha256_lf": "dd0ed1eae0b792a41263b77a93b3e94d13b89490aa5fd0698f7ac29089d007fb"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/ai/tools/ToolProposalValidationModel.kt",
+      "sha256_lf": "04815bcb387aecb9083fbdeb35660effd66e3ec36ad31a58947d21b132a00f99"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/ai/tools/ToolProposalValidator.kt",
+      "sha256_lf": "70b728a7c9131a31aa52c9cc8c73080fb3042fa009d3aa674e8426a65546e768"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/ble/notification/GattNotificationRouter.kt",
+      "sha256_lf": "6e5712ab7ada220d2cc1991396366daae5cbd201e98c99ba44beece3a055d6d2"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/ble/queue/ActiveGattOperationTransport.kt",
+      "sha256_lf": "77c7f47f2c21b8c1772d2e5d27fc33165fb1a8b3da48e3baf023e8d4906951a5"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/ble/queue/GattOperationQueue.kt",
+      "sha256_lf": "8b86417ca70d8c175863749ad40ea25c167f462d42c5d2f2fc7ccdf6478f80f3"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/ble/scan/BleScanModels.kt",
+      "sha256_lf": "a748f637ea3babe72f3ac321bfae53b5eae75480951e70b0b8d43c5c5dc2bbb5"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/capability/LooiCompatibilityFacade.kt",
+      "sha256_lf": "9290fb451e6266cba50ada5ddfe83caa7d7f13c52a3ceefb95778c79af1459e9"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/connection/ConnectionController.kt",
+      "sha256_lf": "376a1723bdccc3b37d373f34dc22859304775121170952c1c6d4088d6779eaa7"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/connection/ConnectionModels.kt",
+      "sha256_lf": "8b82aff54945b59a64352971e637d4bc5ef55bb4d278e125ef363f6b3e0a0fdd"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/connection/ConnectionStateMachine.kt",
+      "sha256_lf": "e4a556cdd0626e3c986eef566db3bd437125dea3a99c6346bf79e0d997fd0247"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/connection/GattTransportDiagnostics.kt",
+      "sha256_lf": "0d42500a46cfe7857c93b5b60ca6aef85d57727a6b54c04d14df220adc51472b"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/connection/reconnect/ReconnectCoordinator.kt",
+      "sha256_lf": "b4b75fc10324cfb15f461af748756d8449a92ecc8f5f86acab8078c098767264"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/discovery/LooiCandidateDiscovery.kt",
+      "sha256_lf": "7792df3b2431b09dcf7046ecb1716e3bc09f1ce4bef829b98218ae9b906dcde7"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/firstlife/LooiFirstLifeDefinition.kt",
+      "sha256_lf": "7481f28d85b136bf8ce3c5b91369c62af4b394c3c0a6e767e40e0d65b39d4510"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/firstlife/LooiFirstLifeDiagnostics.kt",
+      "sha256_lf": "2994522a4ecbf249c1654ec808a850cbdc8537cc0a8c405516d3ccec956c5816"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/firstlife/LooiFirstLifeIdentityMapping.kt",
+      "sha256_lf": "44232be0ee3e22d18a87a90ecc115a60943ab6cfa07f53f129891a8c55476a4d"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/firstlife/LooiFirstLifeProviderSession.kt",
+      "sha256_lf": "094cd8f9fbc4b3745ae1799d0533b740225e3bbb2987b2915ca48b10efc8bd44"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/firstlife/LooiFirstLifeRuntimeBinding.kt",
+      "sha256_lf": "5ccd5353333d366e1705432b48b17d758218c21d7692f9f6bca962c25079acc6"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/firstlife/LooiT032VerifiedRuntimeDelegate.kt",
+      "sha256_lf": "2140f9921cae5750e3aa0a8114c16029eb6858e279f9955f51b2f50843ec8799"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/manifest/LooiCapabilityMapping.kt",
+      "sha256_lf": "5d43e34206c3bb6769619a494d7aba137ad9d6a6907fb1e8f62c84cdb7411e86"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/protocol/handshake/GenerationHandshakeTransport.kt",
+      "sha256_lf": "bf49ca8af57ee182f2c0173f92124b4712ebb588ba9309e29805c4ef0004b7cc"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/protocol/handshake/HandshakeExperimentCoordinator.kt",
+      "sha256_lf": "b61d6a23f72fc5999b45b04efb332998c4a8a3edd865cfbf823f6d6c726bdf8a"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/protocol/handshake/HandshakeModels.kt",
+      "sha256_lf": "981938a565ab83ba36700acea71694b8ac99bd80697b72c9771b1553bb250993"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/protocol/handshake/HandshakeRunner.kt",
+      "sha256_lf": "040935370da06d3f5a27d41a720069f04d0ec285e2c9d94471425d1b90687a70"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/protocol/inventory/GattCapabilityInventory.kt",
+      "sha256_lf": "1657e25f6087aeedfbb18111a41ce9c1af2f585ca077d1d452dae8533b86d0c7"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/protocol/profile/LooiProtocolProfileSelector.kt",
+      "sha256_lf": "915927ea724ae6dfed1785f786e402ca1563f87eb9023c2b0a8f05e4a3dc88b9"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/protocol/profileA/DriveCommandExecutor.kt",
+      "sha256_lf": "94bc32488783fd68c081f3ebaaf3d925bfa96252ae5cd9a4214c3bba4d1ed204"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/protocol/profileA/DriveEncoder.kt",
+      "sha256_lf": "0270c1030e17980fa869915a6899ff7975948506556a42392b278d575c20a996"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/protocol/profileA/HeadEncoder.kt",
+      "sha256_lf": "764c4077c8e96fd1d14477e093232f570e188437dc2944999d18d985722a234e"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/protocol/profileA/LightEncoder.kt",
+      "sha256_lf": "82ac76b9af40a1bebaec7af402be274bf1210836509e2705601e678856d74430"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/protocol/telemetry/LooiTelemetryParser.kt",
+      "sha256_lf": "b67eac899799aa2641ec5ab8edd2ec5ee6eb61c3728a72edfb4d910f593c3771"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/protocol/telemetry/LowerContactSafetyAdapter.kt",
+      "sha256_lf": "94e0bde771367cba4522e6fc05dd0c5ec616b09953723dd1fa2443ae6bc329ab"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/protocol/telemetrycapture/Fed9TelemetryCapture.kt",
+      "sha256_lf": "7c02a6f2e7da707f341149e9ddc96e42e681bb4e376ac8a70a5c2ed75287b4b6"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/protocol/telemetrycapture/VerifiedFed9Prerequisite.kt",
+      "sha256_lf": "dd378c73f1e7b0772988cd3da9a6bf3ee5ef6d255b41305c49a43c643ad03332"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/body/looi/transport/timing/TransportTimingCoordinator.kt",
+      "sha256_lf": "561859b1091048df8230fbf1212d82f27ea34452c1d6a2f02890e438254e6a39"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/capability/api/CapabilityDescriptor.kt",
+      "sha256_lf": "8e81aebb2e60774e3e9b98693d7b12e149d95033a29bb18c1debf948e98975fe"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/capability/api/CapabilityEnvelopeCodec.kt",
+      "sha256_lf": "877faaebac1fd13d27e892b4cd653a311603ba9e0304a266c55be943edd9747e"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/capability/api/CapabilityEnvelopes.kt",
+      "sha256_lf": "21bd2116d3312c99f8ff425381f16042f88675c550a7aafc65ab47cb1b32a908"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/capability/api/CapabilityIdentity.kt",
+      "sha256_lf": "40e39b7c98ee61779d77646211320dc19077c2c108faa78270e307340632fb79"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/capability/negotiation/CapabilityNegotiationModel.kt",
+      "sha256_lf": "e7c1e0273f67c21ac2ab74e28b7da0a3939640085bd414b6848c67bc2487fc5a"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/capability/negotiation/CapabilityNegotiator.kt",
+      "sha256_lf": "360546bd4661538fcf8b6300433f7764942241eb8e9ac5428f1002a24113e59a"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/capability/provider/CapabilityProvider.kt",
+      "sha256_lf": "1d280a5d16c02dfed832d1750fb1f904cfe65e4147dd5f0c7b95491ce2c5b9c5"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/capability/provider/lifecycle/ProviderLifecycleReducer.kt",
+      "sha256_lf": "3d70fea9fdd53417cd4dc8168e4e5b7d747ac4c11b8a961fecdc15919fce2fb0"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/capability/provider/ProviderIdentity.kt",
+      "sha256_lf": "fbc3202e53efd9089b873dec6e4273d02adc047ad7d9f42ac01ff10777e5879d"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/capability/registry/ProviderRegistry.kt",
+      "sha256_lf": "82644208858328762f92a7f055608e3ca698e51f412e4e273d36e54c2e948710"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/connection/api/ConnectionProvider.kt",
+      "sha256_lf": "9f338443c521de038965f60594fefacc75ebd01af0059b5bf95b0af675c22d48"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/context/api/ContextObservation.kt",
+      "sha256_lf": "4f458d3698b7c63d3d4f20541e1d79a58038875e7a76e363b0a825d6c5df2484"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/context/api/ContextObservationCodec.kt",
+      "sha256_lf": "91fdaad58e22200baaee5a2e326a8f3ff3ff90a7c22cc0d1b410931f371629a6"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/context/provider/ActiveBodyState.kt",
+      "sha256_lf": "eeacfbfd4bf64bb3962cfb03bb28c704a6410fd224951113a816e432e8d57f79"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/context/provider/ActiveProviderContext.kt",
+      "sha256_lf": "07eb717d605d091f355ca61804b9be9e6966f7245282435fac79f213f6128041"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/context/runtime/ContextSnapshotCodec.kt",
+      "sha256_lf": "803c499d194a404c605ccce190a9c79ecc040db0436b1a842d6b9f8d19cadf7e"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/context/runtime/ContextSnapshotEngine.kt",
+      "sha256_lf": "45455a6f7d37e5394470fa26973bc8a08c7830fafa49433131d89ddeb2098358"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/context/runtime/ContextSnapshotModel.kt",
+      "sha256_lf": "311c91cfd1039d6752984a4e2f9d70d90951a19681f23b419679f41c47c7792b"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/context/sources/TimePresenceContextSources.kt",
+      "sha256_lf": "2286ca5711ae94ae46d52d715b66d114f09cc9a06c7c587d0eaddd1b186fc05d"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/conversation/context/ConversationContextBuilder.kt",
+      "sha256_lf": "685b881118b041565eb4cc78104a2d68325bb3290627f4d3a9a8d5ed53108ec7"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/conversation/context/ConversationContextCodec.kt",
+      "sha256_lf": "b6d11dc5f02c56fa2be981a20fe65f702de15eb478393795df2dadca243d850b"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/conversation/context/ConversationContextModel.kt",
+      "sha256_lf": "7af8fd9ea0daaa969254efe91d6defc83352bcd2afe0ee43e6f1d05ee4640293"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/conversation/runtime/ConversationTurnCoordinator.kt",
+      "sha256_lf": "56ee871d5ed6a5e81cfc9d5a6e71b249bcb5eeb4de768d82cd032785f9a988d0"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/conversation/runtime/ConversationTurnModel.kt",
+      "sha256_lf": "f8efdee9ed9a8e22139f9c75d91b1bd5bb5b26ca3644f99f0ca4ce60a0a0460b"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/core/authority/MotionAuthority.kt",
+      "sha256_lf": "87db2d6c67bef93495e669c628409e2b7c116ecaa003a5976eb935e11912c2ae"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/core/RobotContracts.kt",
+      "sha256_lf": "4d107e928d229d497eb7b036132062eeb35b4356423df756bf76e34e366458c7"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/core/state/RobotStateStore.kt",
+      "sha256_lf": "3ebc5bb4dd6b0d68acc6375ad3e6ad836091da8a05abf71247292b160a9f728b"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/device/phone/sensors/PhoneSensorDeviceAdapter.kt",
+      "sha256_lf": "9cd2ad97f6bb670683a5d0a81b8e8eacff92151a81e06ee89eac590be39cfeb5"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/device/phone/sensors/PhoneSensorModel.kt",
+      "sha256_lf": "7f8870d0098d0d949108028bbb07fd743a202ceb1de20aa74b6787b899cbbed2"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/discovery/api/DiscoveryObservation.kt",
+      "sha256_lf": "54b0edc48574d4105d31bc5ded5d96ca4f42e833638609850900b2a98cfcc076"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/discovery/api/DiscoveryObservationCodec.kt",
+      "sha256_lf": "e855b3e647fd3be01b99ec7d7053a74efe6b3811581519bf1718ce8acfa39d47"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/discovery/identity/IdentityEvidence.kt",
+      "sha256_lf": "4841feaa50e3c3450d41823f42e40c1c05adf3376a76ebf161d945cd860574fe"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/discovery/identity/IdentityEvidenceCodec.kt",
+      "sha256_lf": "eff3edabfb06355db957e109a20a0db15f579154fcae43fca625f5e2ad75bca2"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/discovery/identity/IdentityResolver.kt",
+      "sha256_lf": "0cdfbe55c0eaff5962617671e7cb00555b7daa73d7a3f09fee47a6d9d9589d5b"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/feature/controlcenter/ControlCenterModel.kt",
+      "sha256_lf": "ebf950c342e5c338bf525ed362769a9a1d747493f630ef3e5ff1758cdf49b7b8"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/feature/controlcenter/ControlCenterProjector.kt",
+      "sha256_lf": "b1101628a19e0796e4643cf0cc2b9fe9afe7fe541802a5acd28dadb1aa92b7f7"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/feature/controlcenter/ControlCenterScreen.kt",
+      "sha256_lf": "0e279b7fbe97691deef5df183a610d50cefb87ade07470a3af28662a4d492267"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/feature/diagnostic/ReadOnlyBleDiagnosticModels.kt",
+      "sha256_lf": "7bbf1a09a9e3d523e0f30de2a5a0d853add0e2dfa933652a37bc596279cf2999"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/feature/hihugo/presentation/HiHugoBodyPresentation.kt",
+      "sha256_lf": "b2f7a8dd401fe858eaefe2f23e2899c4db1f6bbd76e09ccf6f08b408e7ab64a4"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/feature/hihugo/presentation/HiHugoPresentation.kt",
+      "sha256_lf": "0ca6fdd77af03a900e1ee62fa5a06a999399dd51b19f888dbbbbe1ca3111a7c2"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/feature/hihugo/ui/HiHugoEntry.kt",
+      "sha256_lf": "69b873f8727ab8bc8605ab814703050c852b750b139d8fcc01a1bed0391e5149"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/feature/hihugo/ui/HiHugoScreen.kt",
+      "sha256_lf": "c3716b63ab705c8d340f0a744a36e910185eee625720f6244de82585c6875ad6"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/feature/hihugo/ui/HiHugoSvgFace.kt",
+      "sha256_lf": "44fa35b068aa100ddf47b24f62637dba98b0c105317ad18cd0e197991d8dbac2"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/feature/manualcontrol/HeadControls.kt",
+      "sha256_lf": "0ba2af108454ac3ec66ed9520cfd4c8c5b9802dc966800fded27ffeb38091d0d"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/feature/manualcontrol/LightControls.kt",
+      "sha256_lf": "e9a819108577f1b31190a72b8fee70945b7c206fd209ab1bff67b33f36e0f4ff"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/feature/manualcontrol/ManualDriveControls.kt",
+      "sha256_lf": "3e3893ddad7c32c5d69cc581fbf5ac889a46820a2bfff0ce9ac76cf1c9808ae6"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/feature/manualcontrol/T032ManualAcceptanceSession.kt",
+      "sha256_lf": "2397e517cbbf02440e93d67f3c7fd01eed76cbaea9ec4675265e95db4072dee7"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/feature/providers/ProviderBlockedCard.kt",
+      "sha256_lf": "3c8468eef8dc097ae2144e4df3f21d4ad231269fccb14fd246bc17d7509fa159"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/feature/providers/ProviderBlockedDiagnosticProjection.kt",
+      "sha256_lf": "8c368f324e11feef9befd689a5ded50886a12962fd986ee2efcf5642e79530cb"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/feature/providers/ProviderBlockedStateMapper.kt",
+      "sha256_lf": "2cd9c176bdd1657e7af85692be9d5eb659d3aed2ce6ec2f6de80fa4c3424de5a"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/feature/providers/ProviderBlockedUiModel.kt",
+      "sha256_lf": "dc84a8fb2ae637306b4c306de92e7e062ca1a3cbf039fab9fc9a0f7f9dd0c6ff"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/feature/telemetry/TelemetryUi.kt",
+      "sha256_lf": "c00e0c81c7274f98443c7a0560608e74e0c6eaad239ea22cc08e170d36b4e33c"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/firstlife/experience/FirstLifeExperienceCoordinator.kt",
+      "sha256_lf": "694203a64b62378bef936d1661141df532885c1a67f9dd4e658d0888764ae9a9"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/firstlife/experience/FirstLifeExperienceModel.kt",
+      "sha256_lf": "adfadf82d3bc476cf3ea4a6dca08e9be55dabb55ea051affa45f9203831a6bff"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/firstlife/identity/HugoIdentityBootstrap.kt",
+      "sha256_lf": "d62531291a12e346dd1aeb1b212a4aef5d3b7b3e9c4c7eb0575ec19b3b43188c"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/firstlife/interaction/FirstLifeInteractionModel.kt",
+      "sha256_lf": "923836359673b2f86af534f60caee1e756cf3ae12efd8f5b8359be3248f7574f"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/firstlife/interaction/FirstLifeInteractionReducer.kt",
+      "sha256_lf": "bfb6796ad67f0dad5c9dea799be30d80e6465ea4cb12b44e04a867a3251dde7b"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/firstlife/orientation/FirstLifeOrientationController.kt",
+      "sha256_lf": "9fbe306e4c16a534a0d508cbf7f706ac9a845cadedce2a1dd3dc938f02d80d0a"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/firstlife/orientation/FirstLifeOrientationModel.kt",
+      "sha256_lf": "f9ed0a7d7593e43e6cb3c5322de091f8facdfc072d149cb6efbf2a44428ced95"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/firstlife/runtime/FirstLifeAuthorizedCapabilityDispatcher.kt",
+      "sha256_lf": "2333589cf62d310b916677b4f82b69724181dc1e918ce77ad1d35263af6734c5"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/firstlife/runtime/FirstLifeOrientationEffectBinding.kt",
+      "sha256_lf": "9349f19492a76e1921880a84a70a0496cc5497172502bb0ff850eb6c9935dfc1"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/firstlife/runtime/FirstLifeOrientationSessionCoordinator.kt",
+      "sha256_lf": "eb54075bb23b0f4928aa691aadbc562586a35a09333b758a2b85e3221c2c2d08"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/firstlife/runtime/FirstLifeRuntimeCoordinator.kt",
+      "sha256_lf": "38ef5ee85cfe9fdb84e91bac7537da5d5f221e89d1d564e6159b116f8a993175"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/firstlife/runtime/FirstLifeRuntimeEvents.kt",
+      "sha256_lf": "aa6ba99550c43cc88559ec0a909d5191965936712b700c29daa3a89a5a28f072"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/firstlife/runtime/FirstLifeRuntimeModel.kt",
+      "sha256_lf": "1b205e4b1ab9c1b4921da254547b463dc0afebd2ebddf131770aa4b68f3c37cb"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/firstlife/runtime/SessionApprovalConsumption.kt",
+      "sha256_lf": "af7f677fcb820f22c6e15b7a08421b3bf3b75bcc1d1ad65add2cab31ac1eaa42"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/firstlife/vision/CameraSessionModel.kt",
+      "sha256_lf": "81d315c5f4d7377ba85e2651c543459c0bee5eee34803ae984e7df50a76e74fa"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/firstlife/vision/CameraSessionPort.kt",
+      "sha256_lf": "148aac67c902691c1db98b9ae72a79566ead2c919ab1d4e9a37d006d76e8d025"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/firstlife/vision/LatestFrameGate.kt",
+      "sha256_lf": "8649beca0a76f7570ddd596ce41342e5fc2e2873facd7b3dd2abc8bdb6219887"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/firstlife/vision/PersonDetectorResultAdapter.kt",
+      "sha256_lf": "374622ae8e4319b6cbb64d11ce2aaf87de0c02eb6af969f48fab7a5cafa5675b"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/firstlife/vision/PersonEvidenceModel.kt",
+      "sha256_lf": "21eef406143d02d37cf5fe5c1f17264ec77dcf0769b164fcd4d0c11aa8db1221"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/firstlife/vision/PersonEvidenceReducer.kt",
+      "sha256_lf": "b450dbf2f481f510643d06205d2db9c0875543b0d583aba6f2ac2fff2a980f8e"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/firstlife/voice/SpeechOutputModel.kt",
+      "sha256_lf": "c6ebc22c3b70792f76c86e420126e6fab818f8292ce816eba27d6769898c6966"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/firstlife/voice/SpeechOutputPort.kt",
+      "sha256_lf": "4dc3160623a2d6d6f0c24d1179e7c554f830fd083d76257655059ef76caad17a"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/firstlife/voice/VoiceCapturePort.kt",
+      "sha256_lf": "1db179d1ec5300e086a35f93a03c27cb2b25bd952c04c6d4fa50565824812e3c"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/firstlife/voice/VoiceSessionModel.kt",
+      "sha256_lf": "50c055e2f7a3ef065456ad6d78bbc0760455759d4a04c5550d47856569e46fd8"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/firstlife/voice/VoiceSessionReducer.kt",
+      "sha256_lf": "b35c820ee5e36340f18a4251a45eaa9967d52e344842ece3af2c74d033ab9650"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/gateway/auth/GatewayAuthModel.kt",
+      "sha256_lf": "b26a864dec63697253e9851f01c031d870959e69b7c3010f046a2ed3a7d9d895"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/gateway/auth/GatewayTokenStore.kt",
+      "sha256_lf": "1b724d123072ffdf3a8df5ab5ee656bea6d40f2a7c1992e16058432b2a5956a1"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/gateway/contract/GatewayContractCodec.kt",
+      "sha256_lf": "d38deb1a8b92399f059f24be8422b7380df669fc6562f6c421a218e1ca98d650"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/gateway/contract/GatewayContractModel.kt",
+      "sha256_lf": "a311d467350440ed039158dfd58cd38b3cbc4316b9e83d1ea5bb4690d15d1798"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/gateway/policy/ModelPolicyEngine.kt",
+      "sha256_lf": "58977c42692dd8e8be76e6e1f2688e33d9879a01dc10d87257f8f63895ea72f9"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/gateway/policy/ModelPolicyModel.kt",
+      "sha256_lf": "6687a554eafd739f49f501d8bed74a39b5b5aa228f3ef8eadfd1c3a53c4f58aa"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/hugo/identity/HugoIdentity.kt",
+      "sha256_lf": "2d8d8c8807ca60e28271bcd606fc5c3ceddc8c04c95af7a027124e5cab49d8fb"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/HugoFirstLifeApplication.kt",
+      "sha256_lf": "a149706478a11507e41dabaae1849ac0433c9c0b0b5454d65ba66b8d825c9888"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/interaction/localintent/HugoLocalIntentCorpus.kt",
+      "sha256_lf": "debbb7b40ae87505c59c01fa2265f51589ea3abb6506d622bd4f3d10f4f297ca"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/interaction/localintent/LocalIntentModel.kt",
+      "sha256_lf": "8fbdb3f043fb0a7621595d4ca7918813b0fe286c7f30567f458d7fccc41d1d1a"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/interaction/localintent/LocalIntentRouter.kt",
+      "sha256_lf": "7c1b4c488cefff69c388b12643bc7051a724f6b5db212927e842d2142669bc27"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/MainActivity.kt",
+      "sha256_lf": "5fce4ebbe4898086076d75ec4b1295be9ffa132a0890480a9f549b9fb7fadf97"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/manifest/domain/CommonProviderManifest.kt",
+      "sha256_lf": "631df34ebd4c35aa44c91cd093c3ac69edde199ed1ada2a39ca8e13d641fb7ff"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/manifest/domain/CommonProviderManifestCodec.kt",
+      "sha256_lf": "0e23039ec004d39a131fcbe4752e3730a026aa1031bf87eae03f987dd3b01a98"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/manifest/domain/SpecializedProviderManifestCodec.kt",
+      "sha256_lf": "8faa14583a0d41b0c115431831507973e83bcf10cb83f390bcd2c903f800fce3"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/manifest/domain/SpecializedProviderManifests.kt",
+      "sha256_lf": "ecd9e98bc47bf3f93f0f9e7702ab09228d2037b0dbbb6ac23731876867293b9f"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/manifest/resolution/ManifestResolutionModel.kt",
+      "sha256_lf": "fa264173bb04af33e9cd906c9337f73b68d39b97e9fa7a467833bd56d76db3fe"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/manifest/resolution/ManifestResolver.kt",
+      "sha256_lf": "26cbe201d9668262270f4a94cb590794e00be0250de94b3902a08b6834dece0b"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/memory/domain/MemoryDomainModel.kt",
+      "sha256_lf": "44c81740a1bf39598d343cf0bf98512a94ab446fda829e31927d0044c6a8d31f"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/memory/domain/MemoryEnvelopeCodec.kt",
+      "sha256_lf": "5f6934930ee2af3bb9ed7838395e9e9f0448c442e2fd24bebfd98db754a114b7"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/memory/episodic/EpisodicMemory.kt",
+      "sha256_lf": "6603bcd270c96beb3dea3b5095027ea7536135d546cc528267e6148c7b0f1a7f"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/memory/personal/PersonalMemory.kt",
+      "sha256_lf": "fce052a95aa56a508b288acfd897c4752fadd803e4d30b06f49a55626583c153"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/memory/semantic/SemanticMemory.kt",
+      "sha256_lf": "2749c293cd806dc3f3efb942f478210eb72e1cf7e6c6c832ea208da5011fa3a6"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/memory/storage/MemoryChangeSetJournal.kt",
+      "sha256_lf": "d62e792b8677d0a8851ddc329ba258fac2119704e4aca58b603307d763189aa9"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/memory/storage/MemoryEnvelopeStore.kt",
+      "sha256_lf": "f46fb6dc74a55553ff83705a96758e6cc06e35c5b677196f8290b14ceaa5d5d5"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/memory/storage/MemoryRecordStoragePorts.kt",
+      "sha256_lf": "0d18ab1ae6ddbc66bf3b89192f29067b917f720877a08552b32ed8a56ae82d8f"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/memory/working/WorkingSessionMemory.kt",
+      "sha256_lf": "0cb071eac4bc7abe327c343c699331c247e3b584a6f070a1da0e42e81b2f3804"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/connection/ble/BleConnectionPorts.kt",
+      "sha256_lf": "523a5d19be9d9db8dce9d139cadda7a7afc8ad06718db23e24f11adf199e93bf"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/connection/ble/BleConnectionProvider.kt",
+      "sha256_lf": "4d30ba80b5744376f6b0b652e084b8342e474b68c122c5368249c44b0a0a4238"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/context/sources/AndroidTimePresenceSources.kt",
+      "sha256_lf": "03d2fcf39c7558467c2f7f20029392735b26833c2e80ab1b08b3b873f4f0a589"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/device/phone/sensors/AndroidPhoneSensorBackend.kt",
+      "sha256_lf": "00c8e8c761e4f431fa8b8c1c0a7fbfc1c2e255cb71a6011f18d20ea915163a40"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/diagnostic/DiagnosticConnectionClient.kt",
+      "sha256_lf": "082f761af94126e220973448f1f139922909346e7f5c6363568a873bd7d2e00d"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/diagnostic/ReadOnlyBleDiagnosticController.kt",
+      "sha256_lf": "2b70ab80f6aada9d79cbe68402c4607f6f0f040a0e0281f91c01351b7e9621c3"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/gateway/auth/AndroidProtectedGatewayTokenStorage.kt",
+      "sha256_lf": "23791b7447b5a1a622a7db350bafcc0bc2895bd41c0f16b0fcf96a6c2a4bb51d"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/permissions/BlePermissionPolicy.kt",
+      "sha256_lf": "78ca65308a64b594db2ac6a6e02bf39f3bbbbd679a065977b157f05f24e4fc52"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/service/auth/AndroidProtectedServiceCredentialStorage.kt",
+      "sha256_lf": "f981c56ec76baa1beac937ab460f54b0bf67150b5fc4d9c2f40a4834fe9a303c"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/service/ConnectedDeviceConnectionOwner.kt",
+      "sha256_lf": "05c5a994b5ad83764d57414a90137ff273da4bf3ce1e04496f38aceb37c6abc9"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/service/ConnectedDeviceService.kt",
+      "sha256_lf": "8569fe8474aa39d596380ff522ea9363ac1cb814c37670d27d33420228a1769e"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/service/FirstLifeOrientationSafetyProjection.kt",
+      "sha256_lf": "0bfc2b609acf6b05efa9c9591b8f70e669281947bf08f2994c503f8a71c55e86"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/service/FirstLifeProviderSetupController.kt",
+      "sha256_lf": "3f091b9ff2c5ab7a6e23d0512591dbcdce4dbf1512b7bf2f8bfb1bbe55d07b17"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/service/LooiFirstLifeServiceComposition.kt",
+      "sha256_lf": "bc685776696960b785786324e1205df3bc066492ee58e9763df1c70d1e3c113e"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/service/ServiceOwnedLooiBleBridge.kt",
+      "sha256_lf": "ee24bb86ec52712ae335327c775b3e3b8fbda5aeab4204f888b613aed1f88aa7"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/service/ServiceOwnedLooiT032SemanticPort.kt",
+      "sha256_lf": "2f03002036cc55b86c3512701d28a36fe466badb8cc7ee845fc041cec75892a9"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/storage/AndroidHugoIdentityStorage.kt",
+      "sha256_lf": "71abfcf79e9a45b529b99eaa2edb54c993894b2fd06270e1c9d355217040ae4e"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/storage/AndroidMemoryRecordStorage.kt",
+      "sha256_lf": "46cd44ff713e40f45ffa05b1d071be77b3be028232fe8c0af38d890c92c78fe0"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/storage/AndroidProviderInstanceStorage.kt",
+      "sha256_lf": "2979a0d5171eb3f7d5a82539b5fb2910916b194be29181b16ba314b021efc903"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/storage/LooiProviderIdentityRepository.kt",
+      "sha256_lf": "2ba2f5e357e7b6239b74d252bfb3a98a5852489389f10982737230194310f154"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/transport/ble/gatt/AndroidBleConnectionProviderFactory.kt",
+      "sha256_lf": "b764d82ba78dedeee7d4f373c3e041a77d24e0311e4437ae1d194a03974e863a"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/transport/ble/gatt/AndroidGattTransportAdapter.kt",
+      "sha256_lf": "286f9e8c1c3ed7d4a504651bf9878e65dc3ee06b36ace26539ab889f73e9fb47"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/transport/ble/gatt/ExistingGattConnectionBridge.kt",
+      "sha256_lf": "0c1e05938c3ae273bd13af51551422b68eef08f92b7d2634a03d44f55cb68655"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/transport/ble/gatt/GattTransportCallbackTranslator.kt",
+      "sha256_lf": "32be8699c33746cdd34ec6d68814899dd09e34fa8b5d296c12b241ba37f27a3c"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/transport/ble/scan/AndroidBleScanner.kt",
+      "sha256_lf": "a16753fb8a12bb27f15d4311f422a8015f1289ec163e816f3b53d064747f7519"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/vision/android/AndroidCameraXSession.kt",
+      "sha256_lf": "c0460d543b0a30923b42a28bfaf3ad6ec3ef412fecd9fe4bf84189ae11034533"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/vision/android/AndroidMediaPipePersonDetector.kt",
+      "sha256_lf": "350cd923f45921f4d555f6bcc3c62fe46e300db88b9cb984854f5b50ab8e23a2"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/voice/android/AndroidAudioRecordCapturePort.kt",
+      "sha256_lf": "dbffe696ef1636117e615dd63e2cd4f24a0182790f4c043f047d80015426b230"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/voice/android/AndroidLocalTextToSpeech.kt",
+      "sha256_lf": "f494eed979917f678f7254ec066db05795bb35c05df919dc97a392646fd9c985"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/platform/voice/android/AndroidOnDeviceSpeechRecognizer.kt",
+      "sha256_lf": "2afa79a900bf68edd2a666f9c6fd570ea987f3c59e8d103a770e2d3ac4852e79"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/protocol/fixtures/GattCapabilityFixtureMapper.kt",
+      "sha256_lf": "fdb2e3a5a74cca9429a155305b2eab4b43fd9577156535484ad6d1f5b5a5713f"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/protocol/fixtures/ProtocolFixtures.kt",
+      "sha256_lf": "9b74cc8c1a7847fcd0fb4ba6f1532939e12e25a1da407ed381aa90b9fb19a10b"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/provider/calibration/CalibrationModel.kt",
+      "sha256_lf": "dc9d9458fd36670ae722271e36f5a2de6ef47573ad2efeeda5c9d5e1260195d0"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/provider/calibration/CalibrationNegotiationReadiness.kt",
+      "sha256_lf": "f7eb2b3b23174b21dcfb9cb4734899be0a847562f9afd2c4da02836724aefc16"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/provider/calibration/CalibrationValidator.kt",
+      "sha256_lf": "d030f90cfecb88556a7d2c782771c59834473daa0a1aa4b86eabf5fe924f7c49"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/provider/diagnostic/ProviderDiagnosticCodec.kt",
+      "sha256_lf": "c258f4a096b2cd3603cb440c6761861ecab3c1814f44cf069f1a6afbbce9e9e6"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/provider/diagnostic/ProviderDiagnosticModel.kt",
+      "sha256_lf": "ce16a43c8f14bc8dd10d0d299cb34dfa1ef0d43fb968b7973ff8e5dfc14af0bd"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/provider/diagnostic/ProviderDiagnosticProjection.kt",
+      "sha256_lf": "5a1bb702c0c58a9ed94557f04b7b0d801e14e35862644dbf28e2a7a5a931e2a8"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/provider/runtime/ProviderLifecycleOrchestrator.kt",
+      "sha256_lf": "c52a63ff99f8ebc056fbe92a63fefe0cd3c06e59bd58432660332018b6d87120"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/provider/runtime/ProviderOrchestrationModel.kt",
+      "sha256_lf": "c7c04475c3c59bd54b95cda8e3c9b0658373d70206e64541b1bb3cb7f7e70d95"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/provider/runtime/ProviderOrchestrationStages.kt",
+      "sha256_lf": "7e1effc8d17f8cf6e4708b2bd6b5f290c112cb2744041d1adc6eaac9b72f33c3"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/provider/storage/ProviderInstanceStore.kt",
+      "sha256_lf": "1a1d0c405ae2b7484d12f37a97acbe94c0d52687926fee0c2df643c23f9331df"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/provider/storage/ProviderInstanceStoreModel.kt",
+      "sha256_lf": "2407c7a7e635fa90df857c20a9c3159121d07c0f17c92ff030f5b57dfd8b1ce9"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/provider/storage/ProviderInstanceStorePersistence.kt",
+      "sha256_lf": "09553a7d624e94785be17ec371bb9fcb1058537354e4672593785c0e614aaab5"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/safety/deadman/DeadManController.kt",
+      "sha256_lf": "5c269d640e042ce6f1f0ad7463c6cc98d445457ebdd122dfca6d4106a540770e"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/safety/estop/EmergencyStopController.kt",
+      "sha256_lf": "334d112f9f2aa9e7b7b76e023f7e5bb1e80336bc8aed866f28f7d0cbd88c6d4c"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/safety/SafetyController.kt",
+      "sha256_lf": "7ea2f4c340d507882027915d9022cd4da43c1c9c69aeacdf14ab7c380a58ec03"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/safety/sensors/CliffContactSafetyPolicy.kt",
+      "sha256_lf": "7b6ffd0ee179e4682a2e60e4b2c59598738b5c6cd1010a2e4da3faad9687d1a5"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/service/api/ServiceConnectorContract.kt",
+      "sha256_lf": "764becaf9ee6757c7c2ccd6a287b176d94f965cf62e890a694d91f63893a473a"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/service/api/ServiceConnectorEvidence.kt",
+      "sha256_lf": "7f3bf3534bc3bdae09425282765878baa0a087d645fc2723c291dcb82ee2552f"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/service/api/ServiceConnectorTrace.kt",
+      "sha256_lf": "f14584187b05bc6fd031b6ceefcf95fb531b6f7c7897bcd91b427344ce44c888"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/service/auth/ServiceCredentialBoundary.kt",
+      "sha256_lf": "91a0a66006c5557b89c5e756201414b9dc22829050f26197d6b73aaaaa916dc3"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/service/auth/ServiceCredentialStore.kt",
+      "sha256_lf": "71a2b2abc9971084fe3db87731d919a174986470f5a2ef6eb8dd0a6820de7fe0"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/skills/api/SkillExecutionContract.kt",
+      "sha256_lf": "684d03885b60f797a653ff90bb7e2858e5f8374ea275b13e946a8147b5e33967"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/skills/api/SkillModel.kt",
+      "sha256_lf": "daf3a39e00ce19537e23b8458dd9a3e8b772e0a59ef160ff3def025f41204fd0"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/skills/api/SkillRegistry.kt",
+      "sha256_lf": "1dbc07821da2abe37c6fea50836712673709fc8b260023a1ca7fb7a0ec3df6ab"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/skills/local/CapabilityBackedSkillExecutor.kt",
+      "sha256_lf": "fe24ee74f4ce71477452b1d9a83f08cd736302483516b8d61f837be31a080851"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/skills/local/HugoLocalSkillCatalog.kt",
+      "sha256_lf": "3e1d6dc4e5e16a2148ed849a8c2bd590cbae0870d618f54e8c6cb62238f6be48"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/trust/domain/TrustPermissionDomain.kt",
+      "sha256_lf": "8249881a23280faea1d9a7005e2728535e27660ceefdb10cbd6ff37f1a998d8e"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/trust/domain/TrustPermissionEvaluator.kt",
+      "sha256_lf": "b00e7817e03e89788c3ace781943b7157dda76659ca1820d3f59c555d5c4b3cd"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/trust/runtime/ApprovalConsumptionPort.kt",
+      "sha256_lf": "d43676e548c4292fb5957ab192a7445c0838d7afed7109e2d637cc7ad14f9b8e"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/trust/runtime/AuthorizationGate.kt",
+      "sha256_lf": "dbc1f470e85b720c6e4b3d15dda5f290ecc2d9f1b44b4bd81606a30b3e352cb0"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/trust/runtime/AuthorizationGateModel.kt",
+      "sha256_lf": "9a697250dcc586e96d2a98542257cd1e7fefa9bef211023819207257213b4047"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/voice/api/LocalSpeechInteractionCoordinator.kt",
+      "sha256_lf": "6b65c4af65d0ddd6cf0609f554fd366106cd6c9280b1c21753f470a325a2e2e1"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/voice/api/SpeechAdapterContract.kt",
+      "sha256_lf": "61545b147b5cd504f63dda29f5e3af775624b980a8b543064c186f43cbd568a5"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/voice/api/SpeechAudioFocusContract.kt",
+      "sha256_lf": "63d468a1142b8444cbe0090538603d68b0721c232a7d427fab6ac81b39f81171"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/voice/capture/AudioCaptureContract.kt",
+      "sha256_lf": "ee7ab5d089bf45b49e5b4634d16cd0ff9001ac026dfa47512be002a257d57fb5"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/voice/capture/LocalVoiceActivityDetector.kt",
+      "sha256_lf": "0587139ae1bf6389798fdf173795f4a53030af1ed7e26a2b0ead296077260075"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/voice/session/AudioSessionModel.kt",
+      "sha256_lf": "fd37e5b0197c2c663fabff9addc3e58b93d205234517cf7a1a26fbcca7a6baf8"
+    },
+    {
+      "path": "app/src/main/java/io/redi/robot/voice/session/AudioSessionReducer.kt",
+      "sha256_lf": "0169c88f33b4492f10a2599db6df6e0c6fd8fdb2883d1d544f920f34d36c5c1c"
+    }
+  ]
+}

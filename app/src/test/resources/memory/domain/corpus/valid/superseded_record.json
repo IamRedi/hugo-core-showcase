@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0",
+  "recordId": "00000000-0000-4000-8000-000000000007",
+  "ownerIdentity": "ffffffff-0000-4000-8000-000000000001",
+  "layer": "PERSONAL",
+  "type": "preference",
+  "scope": {
+    "kind": "global_personal",
+    "instanceId": null,
+    "version": null
+  },
+  "subjects": [
+    "language"
+  ],
+  "content": {
+    "wireType": "text",
+    "value": "prefers short answers"
+  },
+  "provenance": {
+    "origin": "user_explicit",
+    "modelGenerated": false,
+    "sourceType": "memory.test",
+    "sourceReference": "memory_test",
+    "creator": "hugo_runtime",
+    "observedAtEpochSecond": null
+  },
+  "confidence": 900,
+  "validationState": "DISPUTED",
+  "disposition": "SUPERSEDED",
+  "privacy": "private",
+  "allowedUse": "gateway_allowed",
+  "retention": {
+    "retentionClass": "UNTIL_CORRECTED",
+    "expiresAtEpochSecond": null
+  },
+  "supersedes": null,
+  "conflictsWith": [],
+  "lineage": null,
+  "tombstone": null,
+  "createdAtEpochSecond": 1000,
+  "updatedAtEpochSecond": null
+}

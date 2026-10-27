@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "1.0",
+  "run": {
+    "runId": "t016-hardware-candidate-a-2026-08-24-001",
+    "capturedAtUnixMs": 1787578540359,
+    "capturedMonotonicMs": 0,
+    "operatorTag": "physical-verification"
+  },
+  "redaction": {
+    "redactedDeviceId": "sha256:0a2cfb1f6d74e12b8a017f04c59e6d31",
+    "redactedHardwareHint": "real LOOI base; stable identifiers not retained"
+  },
+  "gattInventory": {
+    "services": [
+      {
+        "uuid": "000000FF-0000-1000-8000-00805F9B34FB",
+        "isPrimary": true,
+        "characteristics": [
+          { "uuid": "0000FED5-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "0000FED8-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "0000FED9-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] },
+          { "uuid": "0000FEDA-0000-1000-8000-00805F9B34FB", "properties": [], "descriptors": [] }
+        ]
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "write",
+      "timestampMs": 0,
+      "source": "android-gatt-callback",
+      "serviceUuid": "000000FF-0000-1000-8000-00805F9B34FB",
+      "characteristicUuid": "0000FEDA-0000-1000-8000-00805F9B34FB",
+      "payloadHex": "01",
+      "withResponse": true
+    },
+    {
+      "type": "write",
+      "timestampMs": 1,
+      "source": "android-gatt-callback",
+      "serviceUuid": "000000FF-0000-1000-8000-00805F9B34FB",
+      "characteristicUuid": "0000FEDA-0000-1000-8000-00805F9B34FB",
+      "payloadHex": "03",
+      "withResponse": true
+    }
+  ],
+  "firmwareUnknowns": [
+    {
+      "component": "Candidate A meaning",
+      "summary": "The real base accepted the captured Candidate A operations, but this does not establish a universal LOOI profile or protocol-ready state."
+    },
+    {
+      "component": "FED8 read payload",
+      "summary": "Android reported a successful read of two bytes, but the raw payload was not retained and is intentionally omitted rather than reconstructed."
+    },
+    {
+      "component": "Candidate B",
+      "summary": "Candidate B remains covered by deterministic fake traces only and was not executed on hardware."
+    }
+  ],
+  "notes": "Physical Candidate A experiment on Samsung SM-S928B, Android 16/API 36 and a real LOOI base. FED5 and FED9 notification subscriptions completed before two FEDA writes (01 then 03), followed by a successful FED8 read of two bytes. The app showed all four Candidate A steps successful. No drive, FE00, FF02, movement, light, head, heartbeat, telemetry, or protocol-ready promotion was used. Event timestamps are relative ordering because the diagnostic flow did not retain per-operation wall-clock timestamps."
+}

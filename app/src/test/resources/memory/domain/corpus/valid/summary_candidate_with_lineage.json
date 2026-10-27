@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "recordId": "00000000-0000-4000-8000-000000000006",
+  "ownerIdentity": "ffffffff-0000-4000-8000-000000000001",
+  "layer": "EPISODIC",
+  "type": "conversation_summary",
+  "scope": {
+    "kind": "global_personal",
+    "instanceId": null,
+    "version": null
+  },
+  "subjects": [
+    "language"
+  ],
+  "content": {
+    "wireType": "text",
+    "value": "session covered two topics"
+  },
+  "provenance": {
+    "origin": "conversation_summary",
+    "modelGenerated": true,
+    "sourceType": "memory.test",
+    "sourceReference": "memory_test",
+    "creator": "gateway",
+    "observedAtEpochSecond": 950
+  },
+  "confidence": 300,
+  "validationState": "CANDIDATE",
+  "disposition": "ACTIVE",
+  "privacy": "private",
+  "allowedUse": "gateway_allowed",
+  "retention": {
+    "retentionClass": "UNTIL_CORRECTED",
+    "expiresAtEpochSecond": null
+  },
+  "supersedes": null,
+  "conflictsWith": [],
+  "lineage": {
+    "derivedFrom": [
+      "00000000-0000-4000-8000-000000000002",
+      "00000000-0000-4000-8000-000000000005"
+    ]
+  },
+  "tombstone": null,
+  "createdAtEpochSecond": 1000,
+  "updatedAtEpochSecond": null
+}

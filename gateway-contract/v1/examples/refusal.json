@@ -1,0 +1,4 @@
+[
+  {"schemaVersion":"1.0","messageType":"event","requestId":"10000000-0000-4000-8000-000000000003","eventId":"20000000-0000-4000-8000-000000000021","sequence":0,"operation":"vision","event":{"type":"started"}},
+  {"schemaVersion":"1.0","messageType":"event","requestId":"10000000-0000-4000-8000-000000000003","eventId":"20000000-0000-4000-8000-000000000022","sequence":1,"operation":"vision","event":{"type":"refusal","reason":"privacy"}}
+]

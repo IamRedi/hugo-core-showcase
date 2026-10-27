@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0",
+  "run": {
+    "runId": "t030a-hardware-connect-status-19-2026-08-24-001",
+    "capturedAtUnixMs": 1787588834924,
+    "capturedMonotonicMs": 0,
+    "operatorTag": "physical-fed9-diagnostic"
+  },
+  "redaction": {
+    "redactedDeviceId": "redacted-looi-device",
+    "redactedHardwareHint": "real LOOI base; stable identifiers not retained"
+  },
+  "gattInventory": {
+    "services": []
+  },
+  "events": [],
+  "firmwareUnknowns": [
+    {
+      "component": "Connection attempt",
+      "summary": "Manual read-only connection attempt failed before service discovery: Android GATT status 19; GattFailure operation CONNECT, kind UNKNOWN, detail Connection callback failed."
+    },
+    {
+      "component": "FED9 telemetry",
+      "summary": "No FED9 subscription was established and no notifications were received; no protocol write, handshake, actuation, or sensor interpretation was performed."
+    }
+  ],
+  "notes": "Read-only physical diagnostic on Samsung SM-S928B, Android 16/API 36. The app was restarted after debug upgrade so the current adapter could observe service discovery. The subsequent fresh connection failed before discovery."
+}

@@ -1,0 +1,67 @@
+name: Android CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: android-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  build:
+    name: JVM, lint and Android APK boundaries
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: gradle
+      - uses: gradle/actions/setup-gradle@v4
+      - uses: gradle/actions/wrapper-validation@v4
+      - run: python scripts/check-showcase.py
+      - name: Frozen First Life documentation guard
+        shell: pwsh
+        run: ./scripts/check-hugo-first-life-docs.ps1
+      - name: Full original and isolated-module gate
+        run: |
+          chmod +x gradlew
+          ./gradlew testDebugUnitTest lintDebug assembleDebug assembleDebugAndroidTest --stacktrace
+          python scripts/check-showcase.py --built
+      - name: JVM test summary
+        if: always()
+        shell: python
+        run: |
+          import glob, os, xml.etree.ElementTree as ET
+          totals = dict(tests=0, failures=0, errors=0, skipped=0)
+          for path in glob.glob('app/build/test-results/testDebugUnitTest/TEST-*.xml'):
+              root = ET.parse(path).getroot()
+              for field in totals: totals[field] += int(root.get(field, 0))
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as report:
+              report.write('JVM results: ' + str(totals) + '\n\nInstrumented suites were compiled; physical hardware was not exercised.\n')
+  secrets:
+    name: Gitleaks complete history
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Nonempty history scan
+        shell: bash
+        run: |
+          set -euo pipefail
+          docker run --rm --user "$(id -u):$(id -g)" \
+            --volume "$PWD:/repo:ro" --workdir /repo \
+            ghcr.io/gitleaks/gitleaks:v8.30.1 \
+            git --config .gitleaks.toml --redact --no-banner \
+            2>&1 | tee "$RUNNER_TEMP/gitleaks.log"
+          if grep -Eq 'ERR|0 commits scanned|scanned ~0 bytes' "$RUNNER_TEMP/gitleaks.log"; then exit 1; fi
+          grep -Eq '[1-9][0-9]* commits scanned' "$RUNNER_TEMP/gitleaks.log"

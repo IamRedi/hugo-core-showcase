@@ -1,0 +1,50 @@
+{
+  "checked_at": "2026-10-27T19:35:29.909780+00:00",
+  "source_commit": "cf03ce5366b8ce41637837a02d41913db88bf265",
+  "local_platform": "Windows x86_64; JDK 21.0.4; Java/Kotlin target 17; Android SDK 35; Gradle 8.10.2",
+  "jvm": {
+    "suites": 132,
+    "tests": 1059,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 9,
+    "passed": 1050,
+    "skip_reason": "Existing directory-fsync durability cases assume a supported directory synchronization primitive; unavailable on Windows."
+  },
+  "android_build": {
+    "modules": [
+      "app",
+      "showcase"
+    ],
+    "lint": "passed",
+    "debug_apk": "passed",
+    "instrumented_apk_compilation": "passed"
+  },
+  "instrumentation": {
+    "environment": "Disposable Android 35 x86_64 emulator; unused Google Play services disabled; networking disabled; no physical device",
+    "showcase_ui": {
+      "tests": 1,
+      "passed": 1
+    },
+    "h059_keystore_storage": {
+      "tests": 3,
+      "passed": 3
+    }
+  },
+  "isolation": {
+    "package": "io.redi.hugo.showcase",
+    "android_platform_permissions": 0,
+    "physical_transports_compiled": false
+  },
+  "unchanged_original_production_kotlin_files": 221,
+  "captured_screenshots": 10,
+  "captured_apk_sha256": "0f7f8533d235e0aaf211e30cf124162160297f6da51cb994d56513f04eb46ea7",
+  "evidence_log_sha256": {
+    "full_local_gate": "f22d19477a965ebd61a3990df2c3007dace266fff10dc45c5d86ddee71d5f5af",
+    "android_instrumentation": "ed3f4127974cf2f4a8f2da62f749012845700865af69b441283e20f689a407c0"
+  },
+  "real_provider_calls": 0,
+  "physical_device_commands": 0,
+  "publication_state": "PRIVATE_OWNER_REVIEW",
+  "owner_approval": null
+}

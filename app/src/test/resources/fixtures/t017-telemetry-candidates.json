@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "run": {
+    "runId": "t017-source-reported-candidates-2026-08-24",
+    "capturedAtUnixMs": 1787568000000,
+    "capturedMonotonicMs": 0,
+    "operatorTag": "research-corpus"
+  },
+  "redaction": {
+    "redactedDeviceId": "not-a-hardware-capture",
+    "redactedHardwareHint": "source-reported packet corpus only"
+  },
+  "gattInventory": { "services": [] },
+  "events": [
+    { "type": "notification", "timestampMs": 1, "source": "source-reported", "serviceUuid": "000000FF-0000-1000-8000-00805F9B34FB", "characteristicUuid": "0000FED9-0000-1000-8000-00805F9B34FB", "payloadHex": "110100", "isIndication": false },
+    { "type": "notification", "timestampMs": 2, "source": "source-reported", "serviceUuid": "000000FF-0000-1000-8000-00805F9B34FB", "characteristicUuid": "0000FED9-0000-1000-8000-00805F9B34FB", "payloadHex": "0100010001", "isIndication": false },
+    { "type": "notification", "timestampMs": 3, "source": "source-reported", "serviceUuid": "000000FF-0000-1000-8000-00805F9B34FB", "characteristicUuid": "0000FED9-0000-1000-8000-00805F9B34FB", "payloadHex": "05", "isIndication": false },
+    { "type": "read", "timestampMs": 4, "source": "source-reported", "serviceUuid": "000000FF-0000-1000-8000-00805F9B34FB", "characteristicUuid": "0000FED8-0000-1000-8000-00805F9B34FB", "payloadHex": "4B01" }
+  ],
+  "firmwareUnknowns": [
+    { "component": "Telemetry", "summary": "Fixtures model source-reported candidates only and do not verify physical sensors." }
+  ],
+  "notes": "T017 corpus; no real-device telemetry is claimed."
+}

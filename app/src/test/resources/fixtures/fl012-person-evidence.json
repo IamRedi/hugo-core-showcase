@@ -1,0 +1,11 @@
+{
+  "no_person": [],
+  "left": [{"confidence":0.91,"left":0.05,"top":0.10,"right":0.35,"bottom":0.92}],
+  "center": [{"confidence":0.88,"left":0.30,"top":0.08,"right":0.70,"bottom":0.94}],
+  "right": [{"confidence":0.86,"left":0.66,"top":0.12,"right":0.94,"bottom":0.90}],
+  "low_confidence": [{"confidence":0.59,"left":0.30,"top":0.10,"right":0.70,"bottom":0.90}],
+  "multiple": [
+    {"confidence":0.84,"left":0.02,"top":0.12,"right":0.42,"bottom":0.90},
+    {"confidence":0.82,"left":0.58,"top":0.10,"right":0.98,"bottom":0.92}
+  ]
+}

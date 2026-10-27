@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:name="io.redi.robot.HugoFirstLifeApplication" android:allowBackup="false"
+        android:fullBackupContent="false" android:dataExtractionRules="@xml/data_extraction_rules"
+        android:icon="@drawable/ic_launcher" android:label="HUGO Showcase"
+        android:theme="@style/Theme.RediRobot" android:usesCleartextTraffic="false"
+        android:networkSecurityConfig="@xml/network_security_config">
+        <activity android:name="io.redi.robot.showcase.HugoShowcaseActivity" android:exported="true">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity>
+    </application>
+</manifest>

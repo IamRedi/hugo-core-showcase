@@ -1,0 +1,5 @@
+[
+  {"schemaVersion":"1.0","messageType":"event","requestId":"10000000-0000-4000-8000-000000000002","eventId":"20000000-0000-4000-8000-000000000011","sequence":0,"operation":"text","event":{"type":"started"}},
+  {"schemaVersion":"1.0","messageType":"event","requestId":"10000000-0000-4000-8000-000000000002","eventId":"20000000-0000-4000-8000-000000000012","sequence":1,"operation":"text","event":{"type":"tool_proposal","proposalId":"30000000-0000-4000-8000-000000000001","skill":"hugo.local.connection_status@1.0","arguments":{}}},
+  {"schemaVersion":"1.0","messageType":"event","requestId":"10000000-0000-4000-8000-000000000002","eventId":"20000000-0000-4000-8000-000000000013","sequence":2,"operation":"text","event":{"type":"completed","reason":"complete"}}
+]
