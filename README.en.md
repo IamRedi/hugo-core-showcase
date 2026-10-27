@@ -12,7 +12,6 @@ A portable, local-first intelligence runtime for authorized bodies, devices and 
 
 [Deutsch](README.md) · [Engineering](docs/ENGINEERING.md) · [Verification](EVIDENCE.md) · [Attribution & provenance](THIRD_PARTY.md)
 
-
 > **Evidence and limitations:** Local-first Android runtime with governed AI action proposals and deterministic authorisation. The public showcase uses a simulated device body; JVM tests and build results do not constitute acceptance testing on physical hardware. [Verification record](EVIDENCE.md).
 
 ## The engineering underneath
