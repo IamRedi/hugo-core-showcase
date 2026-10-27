@@ -12,7 +12,6 @@ Eine portable, lokal arbeitende Intelligenz-Laufzeit für autorisierte Roboter, 
 
 [English](README.en.md) · [Engineering](docs/ENGINEERING.md) · [Verification](EVIDENCE.md) · [Attribution & provenance](THIRD_PARTY.md)
 
-
 > **Nachweisstand und Grenzen:** Lokale Android-Laufzeit mit kontrollierten KI-Aktionsvorschlägen und deterministischer Freigabe. Der öffentliche Showcase verwendet einen simulierten Gerätekörper; JVM-Tests und Build-Nachweise ersetzen keine Abnahme an physischer Hardware. [Prüfprotokoll (EN)](EVIDENCE.md).
 
 ## Was die Ingenieurarbeit trägt
