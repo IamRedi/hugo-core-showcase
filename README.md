@@ -12,6 +12,8 @@ Eine portable, lokal arbeitende Intelligenz-Laufzeit für autorisierte Roboter, 
 
 [English](README.en.md) · [Engineering](docs/ENGINEERING.md) · [Verification](EVIDENCE.md) · [Attribution & provenance](THIRD_PARTY.md)
 
+> **Nachweisstand und Grenzen:** Lokale Android-Laufzeit mit kontrollierten KI-Aktionsvorschlägen und deterministischer Freigabe. Der öffentliche Showcase verwendet einen simulierten Gerätekörper; JVM-Tests und Build-Nachweise ersetzen keine Abnahme an physischer Hardware. [Prüfprotokoll (EN)](EVIDENCE.md).
+
 ## Was die Ingenieurarbeit trägt
 
 - **Autorität als Architekturgrenze:** Discovery und Manifeste gewähren kein Vertrauen. Versionierte Fähigkeiten, scoped Grants, Freigaben, Sessions und lokale Sicherheitsregeln bleiben getrennt.
@@ -58,10 +60,10 @@ Die Quell-Baseline enthält **1053 JVM-Tests in 131 Suites**; die ältere README
 
 H062+ bleibt die nächste kanonische Grenze. Offene Mehrgeräte-Orchestrierung, selbstständige Codeinstallation und allgemeine autonome Navigation werden hier nicht als implementiert dargestellt. [Umfang](docs/PUBLIC_SCOPE.md) · [Architektur](docs/ARCHITECTURE_SHOWCASE.md) · [Partnerschaft](docs/PARTNERSHIP.md).
 
-## Author and license
+## Autor und Lizenz
 
 **Redion Cekrezi / RediON** · [GitHub](https://github.com/IamRedi)
 
-Source-available for local evaluation; this is not an open-source license. Production use, commercial use and redistribution require permission. [LICENSE](LICENSE).
+Der Quellcode ist zur lokalen Bewertung einsehbar. Dies ist **keine Open-Source-Lizenz**; für den Produktions- und kommerziellen Einsatz sowie für die Weiterverbreitung ist eine Genehmigung erforderlich. Maßgeblich ist die [Lizenzdatei](LICENSE).
 
-Third-party components retain their own licenses. Community research is attributed separately from copied code; attribution is not a replacement for permission. [Provenance review](THIRD_PARTY.md).
+Komponenten Dritter unterliegen ihren jeweiligen Lizenzen. Quellen aus der Community und tatsächlich übernommener Fremdcode werden getrennt nachgewiesen; die bloße Nennung einer Quelle ersetzt keine Nutzungsberechtigung. [Herkunfts- und Lizenzprüfung](THIRD_PARTY.md).
