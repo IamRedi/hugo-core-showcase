@@ -56,7 +56,9 @@ Install `showcase/build/outputs/apk/debug/showcase-debug.apk` on a separate emul
 
 The source baseline contains **1053 JVM tests across 131 suites**; the older README count of 962 was superseded by H060/H061. Showcase tests add to that baseline. Exact current results and platform-conditional exclusions are in [EVIDENCE.md](EVIDENCE.md). CI also compiles the instrumented suite; compilation is not execution on a device.
 
-H062+ remains the next canonical boundary. Open-ended multi-provider orchestration, autonomous code installation and general autonomous navigation are not presented as implemented. [Scope](docs/PUBLIC_SCOPE.md) · [Architecture](docs/ARCHITECTURE_SHOWCASE.md) · [Partnership](docs/PARTNERSHIP.md).
+**Status 31 Oct 2026:** the private core has since completed H062–H066 as well: device/body memory per instance and version, strategy memory with attempts and outcomes, validation and reconciliation without silent overwrite, bounded retrieval with hard budgets, and provenance summaries with deletion propagation. All five are pure layers that are not wired into the runtime yet; the full JVM suite there reports 1141 tests across 136 suites with zero failures. This snapshot still contains source only through H061.
+
+H067 (memory control and M6 acceptance) is the next canonical boundary. Open-ended multi-provider orchestration, autonomous code installation and general autonomous navigation are not presented as implemented. [Scope](docs/PUBLIC_SCOPE.md) · [Architecture](docs/ARCHITECTURE_SHOWCASE.md) · [Partnership](docs/PARTNERSHIP.md).
 
 ## Author and license
 
