@@ -56,7 +56,9 @@ Installieren Sie ausschließlich `showcase/build/outputs/apk/debug/showcase-debu
 
 Die Quell-Baseline enthält **1053 JVM-Tests in 131 Suites**; die ältere README-Zahl 962 wurde durch H060/H061 überholt. Neue Showcase-Tests kommen hinzu. Exakte aktuelle Ergebnisse und plattformbedingte Auslassungen stehen in [EVIDENCE.md](EVIDENCE.md). CI baut auch die instrumentierte Suite; Kompilierung ist keine Geräteausführung.
 
-H062+ bleibt die nächste kanonische Grenze. Offene Mehrgeräte-Orchestrierung, selbstständige Codeinstallation und allgemeine autonome Navigation werden hier nicht als implementiert dargestellt. [Umfang](docs/PUBLIC_SCOPE.md) · [Architektur](docs/ARCHITECTURE_SHOWCASE.md) · [Partnerschaft](docs/PARTNERSHIP.md).
+**Stand 31.10.2026:** Im privaten Kern sind inzwischen auch H062–H066 abgeschlossen: Geräte-/Körper-Gedächtnis pro Instanz und Version, Strategie-Gedächtnis mit Versuchen und Ergebnissen, Validierung und Abgleich ohne stilles Überschreiben, begrenzter Abruf mit festen Budgets und Herkunfts-Zusammenfassungen mit Löschweitergabe. Alle fünf sind reine, noch nicht verdrahtete Schichten; die volle JVM-Suite meldet dort 1141 Tests in 136 Suites ohne Fehler. Dieser Snapshot enthält den Quellcode weiterhin nur bis H061.
+
+H067 (Gedächtnis-Kontrolle und M6-Abnahme) ist die nächste kanonische Grenze. Offene Mehrgeräte-Orchestrierung, selbstständige Codeinstallation und allgemeine autonome Navigation werden hier nicht als implementiert dargestellt. [Umfang](docs/PUBLIC_SCOPE.md) · [Architektur](docs/ARCHITECTURE_SHOWCASE.md) · [Partnerschaft](docs/PARTNERSHIP.md).
 
 ## Author and license
 
